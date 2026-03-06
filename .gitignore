@@ -4,3 +4,4 @@ __pycache__/
 data/*.csv
 models/*.pkl
 .DS_Store
+DOCUMENTACION_ML_DETALLADA.md
