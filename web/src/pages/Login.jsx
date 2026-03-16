@@ -12,6 +12,7 @@ const Login = () => {
 
   const handleAuth = async (e) => {
     e.preventDefault();
+    if (loading) return; // Prevent double submission
     setLoading(true);
     setMessage(null);
 
