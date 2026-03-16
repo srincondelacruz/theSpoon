@@ -9,13 +9,13 @@ const Dashboard = ({ session }) => {
   const [extracting, setExtracting] = useState(false);
   const [extractedMenu, setExtractedMenu] = useState(null);
 
-  // Mock ML predictions
-  const predictions = {
-    influx: '+15%',
-    portions: 45,
-    weather: 'Lluvioso',
-    recommendation: 'Aumentar raciones de plato de cuchara (Lluvia)'
-  };
+  // ML predictions populated dynamically
+  const [predictions, setPredictions] = useState({
+    influx: '--%',
+    portions: '--',
+    weather: 'Consultando API...',
+    recommendation: 'Espera procesado.'
+  });
 
   const handleFileUpload = (e) => {
     const selectedFile = e.target.files[0];
@@ -25,17 +25,67 @@ const Dashboard = ({ session }) => {
     setImagePreview(URL.createObjectURL(selectedFile));
   };
 
-  const processImage = () => {
-    // Simulate Document Intelligence processing
+  const processImage = async () => {
     setExtracting(true);
-    setTimeout(() => {
-      setExtracting(false);
-      setExtractedMenu({
-        platos: "1. Lentejas estofadas\n2. Dorada al horno con verduras\n3. Flan casero",
-        precio: "12.50€",
-        tags: "cuchara, tradicional"
+    
+    // 1. Call real OCR backend (Simulated via python currently pending API keys)
+    const formData = new FormData();
+    formData.append("file", file);
+    
+    try {
+      console.log("Enviando a OCR...");
+      const ocrRes = await fetch("http://localhost:8000/api/ocr", {
+        method: "POST",
+        body: formData,
       });
-    }, 4000);
+      console.log("Status OCR:", ocrRes.status);
+      const ocrData = await ocrRes.json();
+      console.log("Data OCR recibida:", ocrData);
+      
+      const textoExtraido = ocrData.text_extracted || "Vuelve a enfocar el menú";
+      
+      // We pass the data to state
+      setExtractedMenu({
+        platos: textoExtraido,
+        precio: "12.50€",
+        tags: "procesando..." // They will be updated in step 2
+      });
+
+      // 2. We trigger ML to determine the portions for this text
+      const mlBody = {
+        platos_texto: textoExtraido,
+        dia_semana: "Martes", // Mock today using script rules
+        lluvia: true,
+        temperatura: 8.5,
+        precio_menu: 12.5,
+        temporada: "invierno"
+      };
+      
+      console.log("Enviando a Predict Menu...", mlBody);
+      const mlRes = await fetch("http://localhost:8000/api/predict_menu", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(mlBody),
+      });
+      console.log("Status ML:", mlRes.status);
+      const mlData = await mlRes.json();
+      console.log("Data ML recibida:", mlData);
+      
+      // 3. Complete the cycle with Python's data
+      setExtractedMenu(prev => ({...prev, tags: mlData.tipo_cocina}));
+      setPredictions({
+        portions: mlData.raciones,
+        influx: mlData.raciones > 35 ? '+12% (Alta)' : '-8% (Baja)',
+        weather: `Lluvia (8.5°C) - ${mlData.dia_semana} (${mlData.temporada})`,
+        recommendation: `El sistema híbrido (${mlData.metodo}) detectó cocina ${mlData.tipo_cocina} (Confianza: ${Math.round(mlData.confianza*100)}%)`
+      });
+
+    } catch (error) {
+      console.error("Error connecting to Python backend", error);
+      alert("El servidor ML no está corriendo. Debes correr fastapi en el puerto 8000");
+    } finally {
+      setExtracting(false);
+    }
   };
 
   const resetUpload = () => {
