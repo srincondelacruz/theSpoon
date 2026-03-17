@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { supabase } from '../supabaseClient';
 import { motion, AnimatePresence } from 'framer-motion';
-import { UploadCloud, FileText, CheckCircle, TrendingUp, Users, CloudRain, ShieldCheck } from 'lucide-react';
+import { UploadCloud, FileText, CheckCircle, TrendingUp, Users, CloudRain, ShieldCheck, Edit3, Trash2 } from 'lucide-react';
 
 const Dashboard = ({ session }) => {
   const [file, setFile] = useState(null);
@@ -10,6 +11,7 @@ const Dashboard = ({ session }) => {
   const [extractedMenu, setExtractedMenu] = useState(null);
   const [publishedMenus, setPublishedMenus] = useState([]);
   const [loadingHistory, setLoadingHistory] = useState(true);
+  const [hasRestaurantProfile, setHasRestaurantProfile] = useState(null);
 
   // ML predictions populated dynamically
   const [predictions, setPredictions] = useState({
@@ -29,7 +31,17 @@ const Dashboard = ({ session }) => {
 
   useEffect(() => {
     fetchMyMenus();
+    checkRestaurantProfile();
   }, [session]);
+
+  const checkRestaurantProfile = async () => {
+    const { data } = await supabase
+      .from('restaurants')
+      .select('id')
+      .eq('id', session.user.id)
+      .single();
+    setHasRestaurantProfile(!!data);
+  };
 
   const fetchMyMenus = async () => {
     try {
@@ -121,16 +133,18 @@ const Dashboard = ({ session }) => {
     try {
       setExtracting(true);
 
-      // Asegurar que existe el restaurante en la tabla restaurants (FK requerida por menus)
-      const { error: restError } = await supabase
+      // Verificar que existe el perfil del restaurante (FK requerida por menus)
+      const { data: restaurant } = await supabase
         .from('restaurants')
-        .upsert({
-          id: session.user.id,
-          name: extractedMenu.restaurante.nombre || session.user.email,
-          location: extractedMenu.restaurante.direccion || null,
-        }, { onConflict: 'id' });
+        .select('id')
+        .eq('id', session.user.id)
+        .single();
 
-      if (restError) throw restError;
+      if (!restaurant) {
+        alert('Primero debes completar tu perfil de restaurante antes de publicar un menú.');
+        setExtracting(false);
+        return;
+      }
 
       const tags = extractedMenu.ofertas.titulo_oferta
         ? [extractedMenu.ofertas.titulo_oferta.toLowerCase()]
@@ -158,6 +172,11 @@ const Dashboard = ({ session }) => {
     }
   };
 
+  const removePlato = (index) => {
+    const newPlatos = extractedMenu.platos.filter((_, i) => i !== index);
+    setExtractedMenu({ ...extractedMenu, platos: newPlatos });
+  };
+
   const addPlato = () => {
     setExtractedMenu({
       ...extractedMenu,
@@ -171,6 +190,13 @@ const Dashboard = ({ session }) => {
         <h2 style={{ fontSize: '2rem', color: 'var(--color-primary-dark)' }}>Panel de Control V2</h2>
         <p style={{ color: 'var(--color-text-muted)' }}>Gestión granular del menú y predicciones.</p>
       </header>
+
+      {hasRestaurantProfile === false && (
+        <div style={{ padding: '1rem', background: '#fef3c7', border: '1px solid #fbbf24', borderRadius: 'var(--border-radius)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <span style={{ color: '#92400e' }}>Completa tu perfil de restaurante para poder publicar menús.</span>
+          <Link to="/profile" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Completar Perfil</Link>
+        </div>
+      )}
 
       <div className="grid grid-cols-2" style={{ alignItems: 'flex-start' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -191,14 +217,6 @@ const Dashboard = ({ session }) => {
 
             {extractedMenu && !extracting && (
               <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                {/* Restaurante */}
-                <div style={{ padding: '1rem', border: '1px solid #7dd3fc', borderRadius: '8px', background: '#f0f9ff' }}>
-                  <h4 style={{ color: '#0369a1', marginBottom: '1rem' }}>📍 Datos del Restaurante</h4>
-                  <div className="form-group"><label>Nombre</label><input className="input" value={extractedMenu.restaurante.nombre} onChange={e => setExtractedMenu({ ...extractedMenu, restaurante: { ...extractedMenu.restaurante, nombre: e.target.value } })} /></div>
-                  <div className="form-group"><label>Dirección</label><input className="input" value={extractedMenu.restaurante.direccion} onChange={e => setExtractedMenu({ ...extractedMenu, restaurante: { ...extractedMenu.restaurante, direccion: e.target.value } })} /></div>
-                  <div className="form-group"><label>Teléfono</label><input className="input" value={extractedMenu.restaurante.telefono} onChange={e => setExtractedMenu({ ...extractedMenu, restaurante: { ...extractedMenu.restaurante, telefono: e.target.value } })} /></div>
-                </div>
-
                 {/* Oferta */}
                 <div style={{ padding: '1rem', border: '1px solid #c084fc', borderRadius: '8px', background: '#faf5ff' }}>
                   <h4 style={{ color: '#7e22ce', marginBottom: '1rem' }}>🏷️ Información de Oferta</h4>
@@ -215,9 +233,10 @@ const Dashboard = ({ session }) => {
                   <h4 style={{ color: '#b45309', marginBottom: '1rem' }}>🍽️ Lista de Platos</h4>
                   {extractedMenu.platos.map((plato, i) => (
                     <div key={i} style={{ marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid #fde68a' }}>
-                      <div style={{ display: 'grid', gridTemplateColumns: '100px 1fr', gap: '1rem', marginBottom: '0.5rem' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: '100px 1fr auto', gap: '0.5rem', marginBottom: '0.5rem' }}>
                         <input className="input" placeholder="Tipo" value={plato.tipo} onChange={e => updatePlato(i, 'tipo', e.target.value)} />
                         <input className="input" placeholder="Nombre" value={plato.nombre} onChange={e => updatePlato(i, 'nombre', e.target.value)} />
+                        <button onClick={() => removePlato(i)} className="btn" style={{ background: 'transparent', color: '#ef4444', padding: '4px' }}><Trash2 size={16} /></button>
                       </div>
                       <textarea className="textarea" placeholder="Descripción" value={plato.descripcion} onChange={e => updatePlato(i, 'descripcion', e.target.value)} />
                       <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem', alignItems: 'center' }}>
@@ -281,6 +300,9 @@ const Dashboard = ({ session }) => {
                     {menu.items.platos?.length || 0} platos extraídos
                   </p>
                 </div>
+                <Link to={`/menu/${menu.id}/edit`} className="btn btn-outline" style={{ marginTop: '0.5rem', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '6px', justifyContent: 'center' }}>
+                  <Edit3 size={14} /> Editar
+                </Link>
               </div>
             ))}
           </div>

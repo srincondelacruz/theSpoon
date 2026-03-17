@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Search, MapPin, ChefHat, ExternalLink } from 'lucide-react';
+import { Search, MapPin, ChefHat } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { supabase, supabaseUrl } from '../supabaseClient';
 
 const Home = () => {
@@ -106,14 +107,14 @@ const Home = () => {
           menus.map((menu, idx) => {
             const menuData = menu.items; // Ahora es un JSONB
             return (
-              <motion.div 
-                key={menu.id}
+              <Link to={`/menu/${menu.id}`} key={menu.id} style={{ textDecoration: 'none', color: 'inherit' }}>
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * idx, duration: 0.5 }}
                 whileHover={{ y: -5, boxShadow: 'var(--shadow-md)' }}
                 className="card"
-                style={{ display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative', overflow: 'hidden' }}
+                style={{ display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative', overflow: 'hidden', cursor: 'pointer' }}
               >
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', backgroundColor: 'var(--color-primary)' }}></div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -155,6 +156,7 @@ const Home = () => {
                   </div>
                 </div>
               </motion.div>
+              </Link>
             );
           })
         )}

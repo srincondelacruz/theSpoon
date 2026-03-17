@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { supabase } from '../supabaseClient';
 import { motion } from 'framer-motion';
-import { Utensils, User, LogOut } from 'lucide-react';
+import { Utensils, User, LogOut, Store } from 'lucide-react';
 
 const Navbar = ({ session }) => {
   const handleLogout = async () => {
@@ -35,6 +35,9 @@ const Navbar = ({ session }) => {
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
             <Link to="/dashboard" className="btn btn-outline" style={{ display: 'flex', gap: '6px' }}>
               <User size={16} /> Dashboard
+            </Link>
+            <Link to="/profile" className="btn btn-outline" style={{ display: 'flex', gap: '6px' }}>
+              <Store size={16} /> Mi Restaurante
             </Link>
             <button onClick={handleLogout} className="btn" style={{ background: 'transparent', color: 'var(--color-text-muted)' }}>
               <LogOut size={16} /> Salir

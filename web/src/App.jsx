@@ -6,6 +6,9 @@ import { supabase } from './supabaseClient';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import RestaurantProfile from './pages/RestaurantProfile';
+import MenuDetail from './pages/MenuDetail';
+import MenuEdit from './pages/MenuEdit';
 
 // Components
 import Navbar from './components/Navbar';
@@ -38,10 +41,19 @@ function App() {
               path="/login" 
               element={!session ? <Login /> : <Navigate to="/dashboard" />} 
             />
-            <Route 
-              path="/dashboard" 
-              element={session ? <Dashboard session={session} /> : <Navigate to="/login" />} 
+            <Route
+              path="/dashboard"
+              element={session ? <Dashboard session={session} /> : <Navigate to="/login" />}
             />
+            <Route
+              path="/profile"
+              element={session ? <RestaurantProfile session={session} /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/menu/:id/edit"
+              element={session ? <MenuEdit session={session} /> : <Navigate to="/login" />}
+            />
+            <Route path="/menu/:id" element={<MenuDetail />} />
           </Routes>
         </main>
       </div>
