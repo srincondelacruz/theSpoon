@@ -138,19 +138,19 @@ async def predict_menu_full(file: UploadFile = File(...)):
         if not menu_data["raw_text"]:
             raise HTTPException(status_code=400, detail="El OCR no detectó ningún texto en la imagen.")
 
-        # Parámetros ML auto-calculados
-        dia_semana = DIAS_SEMANA[datetime.now().weekday()]
-        temporada = _get_temporada()
+        # Parámetros ML auto-calculados con datos reales
+        clima = get_current_weather()
+        dia_semana, temporada = get_context_date_info()
         precio_final = menu_data["precio_general"] or 12.0
         plato_para_ia = menu_data["platos"][0]["nombre"] if menu_data["platos"] else ""
 
         resultado_ml = {}
         if plato_para_ia:
-            resultado_ml = ejecutar_prediccion_completa(
+            resultado_ml = interprete_menu.ejecutar_prediccion_completa(
                 plato=plato_para_ia,
                 dia_semana=dia_semana,
-                lluvia=False,
-                temperatura=20.0,
+                lluvia=clima["raining"],
+                temperatura=clima["temp"],
                 precio_menu=precio_final,
                 temporada=temporada,
                 clasificador=clasificador

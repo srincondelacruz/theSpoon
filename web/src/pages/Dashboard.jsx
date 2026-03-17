@@ -98,7 +98,7 @@ const Dashboard = ({ session }) => {
       formData.append("plato", extractedMenu.platos[0].nombre);
       formData.append("precio", extractedMenu.precio_general);
 
-      const response = await fetch("http://localhost:8000/api/recalculate_prediction", {
+      const response = await fetch("/api/recalculate_prediction", {
         method: "POST",
         body: formData,
       });
@@ -120,15 +120,31 @@ const Dashboard = ({ session }) => {
   const saveMenu = async () => {
     try {
       setExtracting(true);
+
+      // Asegurar que existe el restaurante en la tabla restaurants (FK requerida por menus)
+      const { error: restError } = await supabase
+        .from('restaurants')
+        .upsert({
+          id: session.user.id,
+          name: extractedMenu.restaurante.nombre || session.user.email,
+          location: extractedMenu.restaurante.direccion || null,
+        }, { onConflict: 'id' });
+
+      if (restError) throw restError;
+
+      const tags = extractedMenu.ofertas.titulo_oferta
+        ? [extractedMenu.ofertas.titulo_oferta.toLowerCase()]
+        : [];
+
       const { error } = await supabase
         .from('menus')
         .insert([
           {
             restaurant_id: session.user.id,
-            items: extractedMenu, // Guardamos el objeto completo (JSONB)
-            price: parseFloat(extractedMenu.precio_general),
+            items: extractedMenu,
+            price: parseFloat(extractedMenu.precio_general) || 0,
             date: new Date().toISOString().split('T')[0],
-            tags: [extractedMenu.ofertas.titulo_oferta.toLowerCase()]
+            tags,
           }
         ]);
 
