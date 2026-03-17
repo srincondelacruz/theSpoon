@@ -3,10 +3,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import sys
 import os
+from typing import Optional
 
 # Ensure the scripts directory is in the path to import interprete_menu
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scripts.interprete_menu import ejecutar_prediccion_completa, MODELO_NLP
+from app.services.ocr_service import extract_text_from_image
 from transformers import pipeline as hf_pipeline
 
 app = FastAPI(title="La Cuchara API - OCR & ML")
@@ -23,6 +25,35 @@ app.add_middleware(
 print("Starting to load the ML models. This might take a bit on first run...")
 clasificador = hf_pipeline("zero-shot-classification", model=MODELO_NLP)
 print("Models loaded successfully.")
+
+def obtener_mejor_plato_para_clase(texto_ocr: str) -> str:
+    """
+    Intenta saltar encabezados como 'PRIMEROS:' o líneas con el precio 
+    para encontrar el nombre real del primer plato.
+    """
+    lineas = texto_ocr.split('\n')
+    # Palabras que suelen ser encabezados y no platos
+    keywords_a_ignorar = ["primeros", "segundos", "postres", "bebidas", "menú", "menu"]
+    
+    for linea in lineas:
+        clean = linea.replace('-', '').strip()
+        if not clean: continue
+        
+        # Si la línea contiene el precio (ej: 11€), intentamos saltarla para clasificar
+        if "€" in clean or any(char.isdigit() for char in clean if char not in "0123456789"): 
+             # Si tiene dígitos pero no es un nombre de plato (muy corto o con €)
+             if len(clean) < 10 or "€" in clean:
+                 continue
+        
+        # Si la línea es un encabezado puro
+        if clean.lower().strip(': ') in keywords_a_ignorar:
+            continue
+            
+        if len(clean) > 3:
+            return clean
+            
+    return lineas[0] if lineas else ""
+
 
 class PlatosRequest(BaseModel):
     platos_texto: str
@@ -77,3 +108,84 @@ def predict_menu(request: PlatosRequest):
         return resultado
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/predict_menu_full")
+async def predict_menu_full(
+    file: UploadFile = File(...),
+    dia_semana: str = Form(...),
+    lluvia: bool = Form(...),
+    temperatura: float = Form(...),
+    precio_menu: float = Form(...),
+    temporada: Optional[str] = Form(None)
+):
+    """
+    Endpoint principal unificado: 
+    OCR Azure -> Parsing Estructurado -> Predicción ML
+    """
+    if not file:
+        raise HTTPException(status_code=400, detail="No file uploaded")
+        
+    try:
+        # 1. OCR (Azure API)
+        content = await file.read()
+        ocr_text, precio_detectado = extract_text_from_image(content)
+        
+        if not ocr_text:
+            raise HTTPException(status_code=400, detail="El OCR no detectó ningún texto en la imagen.")
+            
+        precio_final = precio_detectado if precio_detectado is not None else precio_menu
+        
+        # 2. Parsing Estructurado del texto (Heurística simple)
+        # Separamos los platos de los datos de contacto/restaurante
+        lineas = [l.strip() for l in ocr_text.split('\n') if l.strip()]
+        
+        # Intentamos adivinar el nombre del restaurante (suele ser la primera línea)
+        nombre_restaurante = lineas[0] if lineas else "Restaurante Desconocido"
+        
+        # Clasificamos platos para la IA (mejor plato para predicción)
+        plato_para_ia = obtener_mejor_plato_para_clase(ocr_text)
+        
+        # 3. Respuesta estructurada para el Frontend
+        # Mapeamos los campos solicitados por el usuario
+        menu_estructurado = {
+            "restaurante": {
+                "nombre": nombre_restaurante,
+                "direccion": "Consultar en mapa...", # Campo para editar
+                "telefono": "Añadir teléfono..."      # Campo para editar
+            },
+            "ofertas": {
+                "titulo": "Menú del día",
+                "titulo_oferta": "Oferta Especial",
+                "fecha_oferta": dia_semana,
+                "complementos": "Pan, bebida y café incluidos"
+            },
+            "platos": [
+                {"tipo": "1º Plato", "nombre": plato_para_ia, "descripcion": "Extraído por OCR", "suplemento": False, "precio_suplemento": 0},
+                {"tipo": "2º Plato", "nombre": "Siguiente plato detectado...", "descripcion": "", "suplemento": False, "precio_suplemento": 0}
+            ],
+            "precio_general": precio_final
+        }
+            
+        # 4. Predicción de demanda (ML)
+        resultado_ml = ejecutar_prediccion_completa(
+            plato=plato_para_ia,
+            dia_semana=dia_semana,
+            lluvia=lluvia,
+            temperatura=temperatura,
+            precio_menu=precio_final,
+            temporada=temporada,
+            clasificador=clasificador
+        )
+        
+        # Combinamos todo
+        return {
+            "menu": menu_estructurado,
+            "prediccion": resultado_ml,
+            "raw_ocr_text": ocr_text
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+

@@ -27,273 +27,134 @@ const Dashboard = ({ session }) => {
 
   const processImage = async () => {
     setExtracting(true);
-    
-    // 1. Call real OCR backend (Simulated via python currently pending API keys)
     const formData = new FormData();
     formData.append("file", file);
+    formData.append("dia_semana", "Martes");
+    formData.append("lluvia", true);
+    formData.append("temperatura", 8.5);
+    formData.append("precio_menu", 12.5);
+    formData.append("temporada", "invierno");
     
     try {
-      console.log("Enviando a OCR...");
-      const ocrRes = await fetch("http://localhost:8000/api/ocr", {
+      const response = await fetch("http://localhost:8000/api/predict_menu_full", {
         method: "POST",
         body: formData,
       });
-      console.log("Status OCR:", ocrRes.status);
-      const ocrData = await ocrRes.json();
-      console.log("Data OCR recibida:", ocrData);
       
-      const textoExtraido = ocrData.text_extracted || "Vuelve a enfocar el menú";
+      if (!response.ok) throw new Error("Error en el servidor");
+      const data = await response.json();
       
-      // We pass the data to state
-      setExtractedMenu({
-        platos: textoExtraido,
-        precio: "12.50€",
-        tags: "procesando..." // They will be updated in step 2
-      });
+      // Cargamos el menú estructurado que viene del backend
+      setExtractedMenu(data.menu);
 
-      // 2. We trigger ML to determine the portions for this text
-      const mlBody = {
-        platos_texto: textoExtraido,
-        dia_semana: "Martes", // Mock today using script rules
-        lluvia: true,
-        temperatura: 8.5,
-        precio_menu: 12.5,
-        temporada: "invierno"
-      };
-      
-      console.log("Enviando a Predict Menu...", mlBody);
-      const mlRes = await fetch("http://localhost:8000/api/predict_menu", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(mlBody),
-      });
-      console.log("Status ML:", mlRes.status);
-      const mlData = await mlRes.json();
-      console.log("Data ML recibida:", mlData);
-      
-      // 3. Complete the cycle with Python's data
-      setExtractedMenu(prev => ({...prev, tags: mlData.tipo_cocina}));
       setPredictions({
-        portions: mlData.raciones,
-        influx: mlData.raciones > 35 ? '+12% (Alta)' : '-8% (Baja)',
-        weather: `Lluvia (8.5°C) - ${mlData.dia_semana} (${mlData.temporada})`,
-        recommendation: `El sistema híbrido (${mlData.metodo}) detectó cocina ${mlData.tipo_cocina} (Confianza: ${Math.round(mlData.confianza*100)}%)`
+        portions: data.prediccion.raciones,
+        influx: data.prediccion.raciones > 35 ? '+12% (Alta)' : '-8% (Baja)',
+        weather: `Lluvia (${data.prediccion.temperatura}°C) - ${data.prediccion.dia_semana}`,
+        recommendation: `Análisis Real: Detectada cocina ${data.prediccion.tipo_cocina} (Confianza: ${Math.round(data.prediccion.confianza*100)}%)`
       });
-
     } catch (error) {
-      console.error("Error connecting to Python backend", error);
-      alert("El servidor ML no está corriendo. Debes correr fastapi en el puerto 8000");
+      alert(`Error: ${error.message}`);
     } finally {
       setExtracting(false);
     }
   };
 
-  const resetUpload = () => {
-    setFile(null);
-    setImagePreview(null);
-    setExtractedMenu(null);
+  const updatePlato = (index, field, value) => {
+    const newPlatos = [...extractedMenu.platos];
+    newPlatos[index][field] = value;
+    setExtractedMenu({ ...extractedMenu, platos: newPlatos });
   };
 
-  const saveMenu = async () => {
-    alert("Menú guardado en Supabase exitosamente.");
-    setFile(null);
-    setImagePreview(null);
-    setExtractedMenu(null);
+  const addPlato = () => {
+    setExtractedMenu({
+      ...extractedMenu,
+      platos: [...extractedMenu.platos, { tipo: "", nombre: "", descripcion: "", suplemento: false, precio_suplemento: 0 }]
+    });
   };
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      transition={{ duration: 0.5 }}
-      style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}
-    >
-      <header style={{ marginBottom: '1rem' }}>
-        <h2 style={{ fontSize: '2rem', color: 'var(--color-primary-dark)' }}>Panel de Control</h2>
-        <p style={{ color: 'var(--color-text-muted)' }}>Bienvenido, sube tu menú de hoy y revisa tus predicciones.</p>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+      <header>
+        <h2 style={{ fontSize: '2rem', color: 'var(--color-primary-dark)' }}>Panel de Control V2</h2>
+        <p style={{ color: 'var(--color-text-muted)' }}>Gestión granular del menú y predicciones.</p>
       </header>
 
       <div className="grid grid-cols-2" style={{ alignItems: 'flex-start' }}>
-        
-        {/* Upload Section */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           <div className="card">
-            <h3 style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1rem' }}>
-              <UploadCloud color="var(--color-primary)" /> Subir Foto del Menú
-            </h3>
-            
+            <h3 style={{ marginBottom: '1rem' }}><UploadCloud size={20} /> Imagen del Menú</h3>
             {!imagePreview ? (
-              <div 
-                style={{
-                  border: '2px dashed var(--color-border)',
-                  borderRadius: 'var(--border-radius)',
-                  padding: '3rem 2rem',
-                  textAlign: 'center',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '1.5rem',
-                  background: 'var(--color-bg)',
-                  transition: 'all 0.3s ease',
-                }}
-                onDragOver={(e) => e.target.style.borderColor = 'var(--color-primary)'}
-                onDragLeave={(e) => e.target.style.borderColor = 'var(--color-border)'}
-              >
-                <motion.div
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
-                >
-                  <FileText size={48} color="var(--color-text-muted)" />
-                </motion.div>
-                
-                <div>
-                  <h4 style={{ color: 'var(--color-text)', marginBottom: '4px' }}>Selecciona tu método</h4>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>PNG, JPG, HEIC</p>
-                </div>
-
-                <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-                  <label className="btn btn-primary" style={{ cursor: 'pointer' }}>
-                    <UploadCloud size={18} /> Subir de Galería
-                    <input type="file" style={{ display: 'none' }} onChange={handleFileUpload} accept="image/*" />
-                  </label>
-                  
-                  {/* The capture="environment" attribute specifically opens the rear-camera on mobile phones */}
-                  <label className="btn btn-outline" style={{ cursor: 'pointer' }}>
-                    📸 Abrir Cámara
-                    <input type="file" style={{ display: 'none' }} onChange={handleFileUpload} accept="image/*" capture="environment" />
-                  </label>
-                </div>
-              </div>
+              <label className="btn btn-primary" style={{ cursor: 'pointer', display: 'block', textAlign: 'center', padding: '2rem' }}>
+                Subir Menú <input type="file" style={{ display: 'none' }} onChange={handleFileUpload} />
+              </label>
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <div style={{ position: 'relative', borderRadius: 'var(--border-radius)', overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <img src={imagePreview} alt="Preview del menú" style={{ width: '100%', maxHeight: '300px', objectFit: 'contain', background: '#000' }} />
-                  {!extracting && !extractedMenu && (
-                    <button 
-                      onClick={resetUpload} 
-                      className="btn" 
-                      style={{ position: 'absolute', top: '10px', right: '10px', background: 'rgba(0,0,0,0.5)', color: 'white', padding: '4px 8px', fontSize: '0.8rem' }}
-                    >
-                      X Cancelar
-                    </button>
-                  )}
-                </div>
-                
-                {!extracting && !extractedMenu && (
-                  <button className="btn btn-primary" onClick={processImage} style={{ width: '100%' }}>
-                    ✨ Analizar texto con IA
-                  </button>
-                )}
+                <img src={imagePreview} style={{ width: '100%', borderRadius: '8px' }} />
+                {!extractedMenu && !extracting && <button className="btn btn-primary" onClick={processImage}>✨ Analizar con Azure OCR</button>}
               </div>
             )}
 
-            <AnimatePresence>
-              {extracting && (
-                <motion.div 
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  style={{ marginTop: '2rem', textAlign: 'center', color: 'var(--color-primary)' }}
-                >
-                  <motion.div 
-                    animate={{ rotate: 360 }} 
-                    transition={{ repeat: Infinity, duration: 1, ease: 'linear' }}
-                    style={{ display: 'inline-block', marginBottom: '1rem' }}
-                  >
-                    <UploadCloud size={32} />
-                  </motion.div>
-                  <p style={{ fontWeight: 500 }}>La IA está leyendo y clasificando los platos...</p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            {extracting && <div style={{ textAlign: 'center', padding: '1rem' }}>Procesando con IA...</div>}
 
-            <AnimatePresence>
-              {extractedMenu && !extracting && (
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}
-                >
-                  <div style={{ background: '#e0f2fe', border: '1px solid #7dd3fc', padding: '1rem', borderRadius: 'var(--border-radius)' }}>
-                    <div className="form-group">
-                      <label className="form-label" style={{ color: '#0369a1', display: 'flex', justifyContent: 'space-between' }}>
-                        <span>📝 Platos Extraídos</span>
-                        <span style={{ fontSize: '0.75rem', fontWeight: 'normal' }}>(Puedes editar el texto si la IA falló)</span>
-                      </label>
-                      <textarea 
-                        className="textarea" 
-                        rows={4} 
-                        value={extractedMenu.platos} 
-                        onChange={(e) => setExtractedMenu({...extractedMenu, platos: e.target.value})}
-                        style={{ border: '1px solid #38bdf8', outline: 'none' }}
-                      />
-                    </div>
-                    <div style={{ display: 'flex', gap: '1rem' }}>
-                      <div className="form-group" style={{ flex: 1 }}>
-                        <label className="form-label" style={{ color: '#0369a1' }}>Precio</label>
-                        <input 
-                          className="input" 
-                          type="text" 
-                          value={extractedMenu.precio} 
-                          onChange={(e) => setExtractedMenu({...extractedMenu, precio: e.target.value})}
-                        />
-                      </div>
-                      <div className="form-group" style={{ flex: 1 }}>
-                        <label className="form-label" style={{ color: '#0369a1' }}>Etiquetas IA</label>
-                        <input 
-                          className="input" 
-                          type="text" 
-                          value={extractedMenu.tags} 
-                          onChange={(e) => setExtractedMenu({...extractedMenu, tags: e.target.value})}
-                        />
-                      </div>
-                    </div>
-                    <button className="btn btn-primary" onClick={saveMenu} style={{ width: '100%', marginTop: '1rem', display: 'flex', gap: '8px' }}>
-                      <ShieldCheck size={18} /> Publicar Menú
-                    </button>
+            {extractedMenu && !extracting && (
+              <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                {/* Restaurante */}
+                <div style={{ padding: '1rem', border: '1px solid #7dd3fc', borderRadius: '8px', background: '#f0f9ff' }}>
+                  <h4 style={{ color: '#0369a1', marginBottom: '1rem' }}>📍 Datos del Restaurante</h4>
+                  <div className="form-group"><label>Nombre</label><input className="input" value={extractedMenu.restaurante.nombre} onChange={e => setExtractedMenu({...extractedMenu, restaurante: {...extractedMenu.restaurante, nombre: e.target.value}})} /></div>
+                  <div className="form-group"><label>Dirección</label><input className="input" value={extractedMenu.restaurante.direccion} onChange={e => setExtractedMenu({...extractedMenu, restaurante: {...extractedMenu.restaurante, direccion: e.target.value}})} /></div>
+                  <div className="form-group"><label>Teléfono</label><input className="input" value={extractedMenu.restaurante.telefono} onChange={e => setExtractedMenu({...extractedMenu, restaurante: {...extractedMenu.restaurante, telefono: e.target.value}})} /></div>
+                </div>
+
+                {/* Oferta */}
+                <div style={{ padding: '1rem', border: '1px solid #c084fc', borderRadius: '8px', background: '#faf5ff' }}>
+                  <h4 style={{ color: '#7e22ce', marginBottom: '1rem' }}>🏷️ Información de Oferta</h4>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    <div className="form-group"><label>Título</label><input className="input" value={extractedMenu.ofertas.titulo} onChange={e => setExtractedMenu({...extractedMenu, ofertas: {...extractedMenu.ofertas, titulo: e.target.value}})} /></div>
+                    <div className="form-group"><label>Título Oferta</label><input className="input" value={extractedMenu.ofertas.titulo_oferta} onChange={e => setExtractedMenu({...extractedMenu, ofertas: {...extractedMenu.ofertas, titulo_oferta: e.target.value}})} /></div>
                   </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+                  <div className="form-group"><label>Fecha Oferta</label><input className="input" value={extractedMenu.ofertas.fecha_oferta} onChange={e => setExtractedMenu({...extractedMenu, ofertas: {...extractedMenu.ofertas, fecha_oferta: e.target.value}})} /></div>
+                  <div className="form-group"><label>Complementos</label><input className="input" value={extractedMenu.ofertas.complementos} onChange={e => setExtractedMenu({...extractedMenu, ofertas: {...extractedMenu.ofertas, complementos: e.target.value}})} /></div>
+                </div>
+
+                {/* Platos */}
+                <div style={{ padding: '1rem', border: '1px solid #fbbf24', borderRadius: '8px', background: '#fffbeb' }}>
+                  <h4 style={{ color: '#b45309', marginBottom: '1rem' }}>🍽️ Lista de Platos</h4>
+                  {extractedMenu.platos.map((plato, i) => (
+                    <div key={i} style={{ marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid #fde68a' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: '100px 1fr', gap: '1rem', marginBottom: '0.5rem' }}>
+                        <input className="input" placeholder="Tipo" value={plato.tipo} onChange={e => updatePlato(i, 'tipo', e.target.value)} />
+                        <input className="input" placeholder="Nombre" value={plato.nombre} onChange={e => updatePlato(i, 'nombre', e.target.value)} />
+                      </div>
+                      <textarea className="textarea" placeholder="Descripción" value={plato.descripcion} onChange={e => updatePlato(i, 'descripcion', e.target.value)} />
+                      <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem', alignItems: 'center' }}>
+                        <label style={{ fontSize: '0.8rem' }}><input type="checkbox" checked={plato.suplemento} onChange={e => updatePlato(i, 'suplemento', e.target.checked)} /> Suplemento</label>
+                        {plato.suplemento && <input className="input" type="number" step="0.5" style={{ width: '80px' }} value={plato.precio_suplemento} onChange={e => updatePlato(i, 'precio_suplemento', e.target.value)} />}
+                      </div>
+                    </div>
+                  ))}
+                  <button className="btn btn-outline" onClick={addPlato} style={{ width: '100%' }}>+ Añadir Plato</button>
+                </div>
+
+                {/* Precio General */}
+                <div className="card" style={{ background: 'var(--color-primary)', color: 'white' }}>
+                  <div className="form-group" style={{ margin: 0 }}>
+                    <label style={{ color: 'rgba(255,255,255,0.8)' }}>Precio del Menú Completo (€)</label>
+                    <input className="input" style={{ background: 'white', color: 'black' }} type="number" value={extractedMenu.precio_general} onChange={e => setExtractedMenu({...extractedMenu, precio_general: e.target.value})} />
+                  </div>
+                </div>
+
+                <button className="btn btn-primary" onClick={() => alert("Guardado!")} style={{ width: '100%' }}>💾 Guardar Cambios</button>
+              </div>
+            )}
           </div>
         </div>
 
-        {/* ML Predictions Section */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <div className="card" style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-            <div style={{ padding: '1rem', background: '#f0fdf4', borderRadius: '50%', color: '#16a34a' }}>
-              <Users size={28} />
-            </div>
-            <div>
-              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Afluencia Estimada (Hoy)</p>
-              <h3 style={{ fontSize: '2rem', margin: 0 }}>{predictions.influx}</h3>
-            </div>
-          </div>
-          
-          <div className="card" style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-            <div style={{ padding: '1rem', background: '#e0e7ff', borderRadius: '50%', color: '#4f46e5' }}>
-              <TrendingUp size={28} />
-            </div>
-            <div>
-              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Raciones Recomendadas</p>
-              <h3 style={{ fontSize: '2rem', margin: 0 }}>{predictions.portions} <span style={{ fontSize: '1rem', color: 'var(--color-text-muted)', fontWeight: 400 }}>raciones max.</span></h3>
-            </div>
-          </div>
-
-          <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <h4 style={{ display: 'flex', alignItems: 'center', gap: '6px', margin: 0, color: 'var(--color-text)' }}>
-              <CloudRain size={18} color="var(--color-primary)" /> Meteorología y Contexto
-            </h4>
-            <div style={{ background: 'var(--color-bg)', padding: '1rem', borderRadius: 'var(--border-radius)', borderLeft: '4px solid var(--color-primary)' }}>
-              <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--color-text-muted)' }}>
-                <strong>{predictions.weather}:</strong> {predictions.recommendation}
-              </p>
-            </div>
-            <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <CheckCircle size={14} /> Modelo ML entrenado con datos históricos
-            </p>
-          </div>
+          <div className="card"><p style={{ margin: 0, opacity: 0.6 }}>Afluencia Estimada</p><h3>{predictions.influx}</h3></div>
+          <div className="card"><p style={{ margin: 0, opacity: 0.6 }}>Raciones Recomendadas</p><h3>{predictions.portions} <small style={{ fontWeight: 400 }}>raciones</small></h3></div>
+          <div className="card" style={{ borderLeft: '4px solid var(--color-primary)' }}><strong>{predictions.weather}:</strong><p>{predictions.recommendation}</p></div>
         </div>
       </div>
     </motion.div>
