@@ -1,0 +1,282 @@
+plato_id,nombre,categoria,tipo_plato,temporada
+1,Sopa castellana,primero,cuchara,otoño
+2,Lentejas estofadas,primero,cuchara,otoño
+3,Crema de calabaza,primero,cuchara,otoño
+4,Judías con chorizo,primero,otro,otoño
+5,Puchero madrileño,primero,cuchara,otoño
+6,Pollo asado con patatas,segundo,carne,otoño
+7,Merluza en salsa verde,segundo,pescado,otoño
+8,Albóndigas en salsa,segundo,otro,otoño
+9,Lomo a la plancha,segundo,carne,otoño
+10,Callos a la madrileña,segundo,otro,otoño
+11,Arroz con leche,postre,postre,otoño
+12,Flan casero,postre,postre,otoño
+13,Tarta de manzana,postre,postre,otoño
+14,Natillas,postre,postre,otoño
+15,Coulant de chocolate,postre,postre,otoño
+16,Cocido madrileño,primero,cuchara,invierno
+17,Sopa de ajo,primero,cuchara,invierno
+18,Lentejas con verduras,primero,cuchara,invierno
+19,Fabada asturiana,primero,cuchara,invierno
+20,Potaje de garbanzos,primero,cuchara,invierno
+21,Rabo de toro,segundo,carne,invierno
+22,Bacalao al pil pil,segundo,pescado,invierno
+23,Estofado de ternera,segundo,carne,invierno
+24,Secreto ibérico,segundo,carne,invierno
+25,Chuletillas de cordero,segundo,carne,invierno
+26,Torrijas,postre,postre,invierno
+27,Tarta de queso,postre,postre,invierno
+28,Crema catalana,postre,postre,invierno
+29,Brownie con helado,postre,postre,invierno
+30,Leche frita,postre,postre,invierno
+31,Gazpacho,primero,frio,primavera
+32,Ensalada mixta,primero,frio,primavera
+33,Crema de espárragos,primero,cuchara,primavera
+34,Sopa fría de tomate,primero,cuchara,primavera
+35,Menestra de verduras,primero,otro,primavera
+36,Pollo al limón,segundo,carne,primavera
+37,Merluza a la romana,segundo,pescado,primavera
+38,Ternera a la plancha,segundo,carne,primavera
+39,Pechuga a la plancha,segundo,otro,primavera
+40,Calamares encebollados,segundo,otro,primavera
+41,Fresones con nata,postre,postre,primavera
+42,Helado artesano,postre,postre,primavera
+43,Sorbete de limón,postre,postre,primavera
+44,Tarta de frutas,postre,postre,primavera
+45,Panna cotta,postre,postre,primavera
+46,Ensalada templada de setas,primero,frio,otoño
+47,Crema de puerros,primero,cuchara,otoño
+48,Hummus con crudités,primero,vegano,otoño
+49,Tabulé,primero,otro,otoño
+50,Sopa minestrone,primero,cuchara,otoño
+51,Dorada al horno,segundo,pescado,otoño
+52,Pollo al romero,segundo,carne,otoño
+53,Brochetas de ternera,segundo,carne,otoño
+54,Salmón con verduras,segundo,pescado,otoño
+55,Musaka griega,segundo,otro,otoño
+56,Crema de zanahoria y jengibre,primero,cuchara,invierno
+57,Ensalada César,primero,frio,invierno
+58,Sopa de cebolla,primero,cuchara,invierno
+59,Falafel con ensalada,primero,frio,invierno
+60,Crema de champiñones,primero,cuchara,invierno
+61,Cordero al horno,segundo,carne,invierno
+62,Lubina a la sal,segundo,pescado,invierno
+63,Moussaka,segundo,otro,invierno
+64,Tajín de pollo,segundo,carne,invierno
+65,Bacalao confitado,segundo,pescado,invierno
+66,Ensalada griega,primero,frio,primavera
+67,Gazpacho andaluz,primero,frio,primavera
+68,Tabulé de quinoa,primero,vegano,primavera
+69,Carpaccio de tomate,primero,frio,primavera
+70,Crema fría de pepino,primero,cuchara,primavera
+71,Atún a la plancha,segundo,pescado,primavera
+72,Pollo con limón y hierbas,segundo,carne,primavera
+73,Brochetas de gambas,segundo,pescado,primavera
+74,Sardinas a la brasa,segundo,pescado,primavera
+75,Hamburguesa mediterránea,segundo,otro,primavera
+76,Minestrone,primero,otro,otoño
+77,Bruschetta de tomate,primero,otro,otoño
+78,Ensalada caprese,primero,frio,otoño
+79,Crema de calabacín,primero,cuchara,otoño
+80,Antipasto variado,primero,otro,otoño
+81,Pasta carbonara,segundo,pasta,otoño
+82,Lasaña boloñesa,segundo,pasta,otoño
+83,Scaloppine al limón,segundo,otro,otoño
+84,Pizza margarita,segundo,otro,otoño
+85,Ravioli de ricotta,segundo,pasta,otoño
+86,Risotto de setas,primero,otro,invierno
+87,Sopa toscana,primero,cuchara,invierno
+88,Carpaccio de ternera,primero,frio,invierno
+89,Crema de parmesano,primero,cuchara,invierno
+90,Bruschetta de champiñones,primero,otro,invierno
+91,Ossobuco alla milanese,segundo,otro,invierno
+92,Pasta al ragú,segundo,pasta,invierno
+93,Saltimbocca romana,segundo,otro,invierno
+94,Pizza quattro formaggi,segundo,otro,invierno
+95,Ñoquis al pesto,segundo,pasta,invierno
+96,Ensalada italiana,primero,frio,primavera
+97,Caprese con burrata,primero,otro,primavera
+98,Vitello tonnato,primero,otro,primavera
+99,Gazpacho italiano,primero,frio,primavera
+100,Carpaccio de calabacín,primero,frio,primavera
+101,Pasta primavera,segundo,pasta,primavera
+102,Pizza napolitana,segundo,otro,primavera
+103,Pollo alla cacciatora,segundo,carne,primavera
+104,Linguine alle vongole,segundo,pasta,primavera
+105,Penne arrabbiata,segundo,pasta,primavera
+106,Sopa de miso,primero,cuchara,otoño
+107,Rollitos de primavera,primero,otro,otoño
+108,Gyozas de cerdo,primero,otro,otoño
+109,Ensalada de wakame,primero,frio,otoño
+110,Edamame,primero,vegano,otoño
+111,Pollo teriyaki,segundo,carne,otoño
+112,Pad thai,segundo,otro,otoño
+113,Cerdo agridulce,segundo,carne,otoño
+114,Curry rojo de pollo,segundo,carne,otoño
+115,Arroz frito con gambas,segundo,pescado,otoño
+116,Ramen de cerdo,primero,cuchara,invierno
+117,Sopa tom yum,primero,cuchara,invierno
+118,Wonton soup,primero,otro,invierno
+119,Dim sum variado,primero,otro,invierno
+120,Sopa pho,primero,cuchara,invierno
+121,Ramen tonkotsu,segundo,otro,invierno
+122,Curry japonés,segundo,otro,invierno
+123,Pato pekinés,segundo,carne,invierno
+124,Bibimbap,segundo,otro,invierno
+125,Noodles con ternera,segundo,carne,invierno
+126,Ensalada thai,primero,frio,primavera
+127,Rollitos vietnamitas,primero,otro,primavera
+128,Sopa fría de pepino,primero,cuchara,primavera
+129,Edamame con sal,primero,vegano,primavera
+130,Tataki de atún,primero,otro,primavera
+131,Salmón teriyaki,segundo,pescado,primavera
+132,Pollo kung pao,segundo,carne,primavera
+133,Arroz jazmín con verduras,segundo,arroz,primavera
+134,Yakisoba,segundo,otro,primavera
+135,Tofu mapo,segundo,vegano,primavera
+136,Ensalada valenciana,primero,frio,otoño
+137,Croquetas de jamón,primero,otro,otoño
+138,Mejillones al vapor,primero,otro,otoño
+139,Pimientos del piquillo rellenos,primero,otro,otoño
+140,Sopa de pescado,primero,cuchara,otoño
+141,Arroz con pollo,segundo,carne,otoño
+142,Paella de marisco,segundo,pescado,otoño
+143,Arroz al horno,segundo,arroz,otoño
+144,Arroz negro,segundo,arroz,otoño
+145,Fideuá,segundo,arroz,otoño
+146,Sopa de marisco,primero,cuchara,invierno
+147,Croquetas de bacalao,primero,otro,invierno
+148,Calamares a la romana,primero,otro,invierno
+149,Pimientos asados,primero,otro,invierno
+150,Patatas bravas,primero,otro,invierno
+151,Arroz caldoso de bogavante,segundo,arroz,invierno
+152,Paella mixta,segundo,arroz,invierno
+153,Arroz con costillas,segundo,carne,invierno
+154,Arroz a banda,segundo,arroz,invierno
+155,Arroz con verduras,segundo,arroz,invierno
+156,Ensalada de pulpo,primero,frio,primavera
+157,Gazpacho manchego,primero,frio,primavera
+158,Mejillones en escabeche,primero,otro,primavera
+159,Boquerones en vinagre,primero,otro,primavera
+160,Ensaladilla rusa,primero,otro,primavera
+161,Paella valenciana,segundo,arroz,primavera
+162,Arroz con gambas,segundo,pescado,primavera
+163,Arroz de verduras,segundo,arroz,primavera
+164,Fideuá de marisco,segundo,arroz,primavera
+165,Arroz meloso de setas,segundo,arroz,primavera
+166,Sopa castellana de setas,primero,cuchara,otoño
+167,Morcilla de Burgos,primero,otro,otoño
+168,Ensalada templada,primero,frio,otoño
+169,Patatas revolconas,primero,otro,otoño
+170,Chuletón de ternera,segundo,carne,otoño
+171,Cochinillo asado,segundo,carne,otoño
+172,Costillas de cerdo,segundo,carne,otoño
+173,Entrecot a la brasa,segundo,carne,otoño
+174,Chuletas de cordero,segundo,carne,otoño
+175,Sopa de cocido,primero,cuchara,invierno
+176,Croquetas caseras,primero,otro,invierno
+177,Morcilla con pimientos,primero,otro,invierno
+178,Ensalada de escarola,primero,frio,invierno
+179,Revuelto de morcilla,primero,otro,invierno
+180,Lechazo asado,segundo,carne,invierno
+181,Chuletón de buey,segundo,carne,invierno
+182,Secreto ibérico a la brasa,segundo,carne,invierno
+183,Solomillo al whisky,segundo,carne,invierno
+184,Codillo asado,segundo,carne,invierno
+185,Ensalada de tomate,primero,frio,primavera
+186,Parrillada de verduras,primero,otro,primavera
+187,Espárragos a la brasa,primero,otro,primavera
+188,Cogollos a la plancha,primero,otro,primavera
+189,Pimientos de Padrón,primero,otro,primavera
+190,Entrecot con patatas,segundo,carne,primavera
+191,Pollo de corral asado,segundo,carne,primavera
+192,Brochetas de cordero,segundo,carne,primavera
+193,Costillas BBQ,segundo,carne,primavera
+194,Hamburguesa gourmet,segundo,otro,primavera
+195,Crema de calabaza y curry,primero,cuchara,otoño
+196,Ensalada de quinoa,primero,frio,otoño
+197,Hummus casero,primero,vegano,otoño
+198,Sopa de lentejas rojas,primero,cuchara,otoño
+199,Rollitos de col,primero,otro,otoño
+200,Curry de garbanzos,segundo,otro,otoño
+201,Lasaña de verduras,segundo,pasta,otoño
+202,Hamburguesa vegana,segundo,vegano,otoño
+203,Tofu salteado,segundo,vegano,otoño
+204,Bowl de lentejas,segundo,otro,otoño
+205,Crema de brócoli,primero,cuchara,invierno
+206,Bowl de boniato asado,primero,frio,invierno
+207,Sopa de miso vegana,primero,cuchara,invierno
+208,Falafel casero,primero,vegano,invierno
+209,Crema de coliflor,primero,cuchara,invierno
+210,Estofado de soja,segundo,vegano,invierno
+211,Risotto de setas,segundo,arroz,invierno
+212,Chili sin carne,segundo,otro,invierno
+213,Guiso de judías,segundo,otro,invierno
+214,Pasta integral con verduras,segundo,pasta,invierno
+215,Gazpacho verde,primero,frio,primavera
+216,Ensalada power bowl,primero,frio,primavera
+217,Ceviche de mango,primero,frio,primavera
+218,Crema fría de guisantes,primero,cuchara,primavera
+219,Buddha bowl,primero,frio,primavera
+220,Bowl hawaiano vegano,segundo,vegano,primavera
+221,Wrap de falafel,segundo,otro,primavera
+222,Pasta de calabacín,segundo,pasta,primavera
+223,Ensalada power,segundo,otro,primavera
+224,Tacos de jackfruit,segundo,vegano,primavera
+225,Salpicón de marisco,primero,otro,otoño
+226,Gambas al ajillo,primero,otro,otoño
+227,Mejillones a la marinera,primero,otro,otoño
+228,Ensalada de mariscos,primero,frio,otoño
+229,Merluza a la vasca,segundo,pescado,otoño
+230,Lubina a la espalda,segundo,pescado,otoño
+231,Gambas a la plancha,segundo,pescado,otoño
+232,Rape alangostado,segundo,pescado,otoño
+233,Cazuela de almejas,primero,otro,invierno
+234,Pulpo a la gallega,primero,otro,invierno
+235,Navajas a la plancha,primero,otro,invierno
+236,Vieiras gratinadas,primero,otro,invierno
+237,Bacalao gratinado,segundo,pescado,invierno
+238,Zarzuela de pescado,segundo,pescado,invierno
+239,Rodaballo al horno,segundo,pescado,invierno
+240,Merluza en salsa,segundo,pescado,invierno
+241,Chipirones encebollados,segundo,pescado,invierno
+242,Cóctel de gambas,primero,otro,primavera
+243,Ensalada de langostinos,primero,frio,primavera
+244,Ceviche de lubina,primero,frio,primavera
+245,Tartar de atún,primero,otro,primavera
+246,Gazpacho de marisco,primero,frio,primavera
+247,Dorada a la sal,segundo,pescado,primavera
+248,Gambas al ajillo,segundo,pescado,primavera
+249,Atún rojo a la plancha,segundo,pescado,primavera
+250,Pulpo a la brasa,segundo,pescado,primavera
+251,Langostinos a la plancha,segundo,pescado,primavera
+252,Sopa azteca,primero,cuchara,otoño
+253,Nachos con guacamole,primero,otro,otoño
+254,Elote asado,primero,otro,otoño
+255,Quesadillas de queso,primero,otro,otoño
+256,Totopos con pico de gallo,primero,otro,otoño
+257,Tacos al pastor,segundo,otro,otoño
+258,Enchiladas rojas,segundo,otro,otoño
+259,Burrito de pollo,segundo,carne,otoño
+260,Fajitas de ternera,segundo,carne,otoño
+261,Chili con carne,segundo,otro,otoño
+262,Pozole rojo,primero,cuchara,invierno
+263,Queso fundido con chorizo,primero,otro,invierno
+264,Sopa de tortilla,primero,cuchara,invierno
+265,Nachos gratinados,primero,otro,invierno
+266,Flautas de pollo,primero,otro,invierno
+267,Tamales de cerdo,segundo,carne,invierno
+268,Mole poblano,segundo,otro,invierno
+269,Burritos de carne asada,segundo,otro,invierno
+270,Enchiladas verdes,segundo,otro,invierno
+271,Chilaquiles rojos,segundo,otro,invierno
+272,Guacamole fresco,primero,otro,primavera
+273,Ensalada mexicana,primero,frio,primavera
+274,Ceviche de camarón,primero,frio,primavera
+275,Esquites,primero,otro,primavera
+276,Tostadas de aguacate,primero,otro,primavera
+277,Tacos de pescado,segundo,otro,primavera
+278,Bowl mexicano,segundo,otro,primavera
+279,Quesadillas de pollo,segundo,carne,primavera
+280,Fajitas de gambas,segundo,pescado,primavera
+281,Burrito bowl vegetal,segundo,otro,primavera

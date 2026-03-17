@@ -1,0 +1,1281 @@
+menu_id,restaurante_id,fecha,dia_semana,dia_semana_num,temporada,primer_plato,primer_plato_id,segundo_plato,segundo_plato_id,postre,postre_id,bebida_incluida,precio
+1,1,2025-09-01,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+2,1,2025-09-02,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+3,1,2025-09-03,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+4,1,2025-09-04,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+5,1,2025-09-05,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+6,1,2025-09-08,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+7,1,2025-09-09,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+8,1,2025-09-10,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+9,1,2025-09-11,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+10,1,2025-09-12,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+11,1,2025-09-15,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+12,1,2025-09-16,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+13,1,2025-09-17,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+14,1,2025-09-18,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+15,1,2025-09-19,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+16,1,2025-09-22,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+17,1,2025-09-23,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+18,1,2025-09-24,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+19,1,2025-09-25,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+20,1,2025-09-26,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+21,1,2025-09-29,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+22,1,2025-09-30,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+23,1,2025-10-01,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+24,1,2025-10-02,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+25,1,2025-10-03,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+26,1,2025-10-06,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+27,1,2025-10-07,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+28,1,2025-10-08,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+29,1,2025-10-09,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+30,1,2025-10-10,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+31,1,2025-10-13,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+32,1,2025-10-14,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+33,1,2025-10-15,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+34,1,2025-10-16,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+35,1,2025-10-17,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+36,1,2025-10-20,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+37,1,2025-10-21,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+38,1,2025-10-22,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+39,1,2025-10-23,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+40,1,2025-10-24,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+41,1,2025-10-27,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+42,1,2025-10-28,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+43,1,2025-10-29,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+44,1,2025-10-30,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+45,1,2025-10-31,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+46,1,2025-11-03,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+47,1,2025-11-04,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+48,1,2025-11-05,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+49,1,2025-11-06,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+50,1,2025-11-07,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+51,1,2025-11-10,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+52,1,2025-11-11,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+53,1,2025-11-12,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+54,1,2025-11-13,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+55,1,2025-11-14,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+56,1,2025-11-17,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+57,1,2025-11-18,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+58,1,2025-11-19,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+59,1,2025-11-20,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+60,1,2025-11-21,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+61,1,2025-11-24,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,12.5
+62,1,2025-11-25,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,12.5
+63,1,2025-11-26,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,12.5
+64,1,2025-11-27,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,12.5
+65,1,2025-11-28,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,12.5
+66,1,2025-12-01,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+67,1,2025-12-02,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+68,1,2025-12-03,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+69,1,2025-12-04,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+70,1,2025-12-05,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+71,1,2025-12-09,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+72,1,2025-12-10,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+73,1,2025-12-11,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+74,1,2025-12-12,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+75,1,2025-12-15,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+76,1,2025-12-16,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+77,1,2025-12-17,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+78,1,2025-12-18,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+79,1,2025-12-19,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+80,1,2025-12-22,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+81,1,2025-12-23,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+82,1,2025-12-24,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+83,1,2025-12-26,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+84,1,2025-12-29,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+85,1,2025-12-30,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+86,1,2025-12-31,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+87,1,2026-01-02,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+88,1,2026-01-05,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+89,1,2026-01-07,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+90,1,2026-01-08,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+91,1,2026-01-09,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+92,1,2026-01-12,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+93,1,2026-01-13,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+94,1,2026-01-14,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+95,1,2026-01-15,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+96,1,2026-01-16,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+97,1,2026-01-19,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+98,1,2026-01-20,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+99,1,2026-01-21,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+100,1,2026-01-22,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+101,1,2026-01-23,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+102,1,2026-01-26,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+103,1,2026-01-27,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+104,1,2026-01-28,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+105,1,2026-01-29,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+106,1,2026-01-30,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+107,1,2026-02-02,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+108,1,2026-02-03,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+109,1,2026-02-04,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+110,1,2026-02-05,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+111,1,2026-02-06,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+112,1,2026-02-09,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+113,1,2026-02-10,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+114,1,2026-02-11,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+115,1,2026-02-12,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+116,1,2026-02-13,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+117,1,2026-02-16,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+118,1,2026-02-17,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+119,1,2026-02-18,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+120,1,2026-02-19,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+121,1,2026-02-20,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+122,1,2026-02-23,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,12.5
+123,1,2026-02-24,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,12.5
+124,1,2026-02-25,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,12.5
+125,1,2026-02-26,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,12.5
+126,1,2026-02-27,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,12.5
+127,1,2026-03-02,Lunes,0,primavera,Gazpacho,31,Pollo al limón,36,Fresones con nata,41,True,12.5
+128,1,2026-03-03,Martes,1,primavera,Ensalada mixta,32,Merluza a la romana,37,Helado artesano,42,True,12.5
+129,2,2025-09-01,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+130,2,2025-09-02,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+131,2,2025-09-03,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+132,2,2025-09-04,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+133,2,2025-09-05,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+134,2,2025-09-08,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+135,2,2025-09-09,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+136,2,2025-09-10,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+137,2,2025-09-11,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+138,2,2025-09-12,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+139,2,2025-09-15,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+140,2,2025-09-16,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+141,2,2025-09-17,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+142,2,2025-09-18,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+143,2,2025-09-19,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+144,2,2025-09-22,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+145,2,2025-09-23,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+146,2,2025-09-24,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+147,2,2025-09-25,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+148,2,2025-09-26,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+149,2,2025-09-29,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+150,2,2025-09-30,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+151,2,2025-10-01,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+152,2,2025-10-02,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+153,2,2025-10-03,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+154,2,2025-10-06,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+155,2,2025-10-07,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+156,2,2025-10-08,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+157,2,2025-10-09,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+158,2,2025-10-10,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+159,2,2025-10-13,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+160,2,2025-10-14,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+161,2,2025-10-15,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+162,2,2025-10-16,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+163,2,2025-10-17,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+164,2,2025-10-20,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+165,2,2025-10-21,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+166,2,2025-10-22,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+167,2,2025-10-23,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+168,2,2025-10-24,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+169,2,2025-10-27,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+170,2,2025-10-28,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+171,2,2025-10-29,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+172,2,2025-10-30,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+173,2,2025-10-31,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+174,2,2025-11-03,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+175,2,2025-11-04,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+176,2,2025-11-05,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+177,2,2025-11-06,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+178,2,2025-11-07,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+179,2,2025-11-10,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+180,2,2025-11-11,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+181,2,2025-11-12,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+182,2,2025-11-13,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+183,2,2025-11-14,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+184,2,2025-11-17,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+185,2,2025-11-18,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+186,2,2025-11-19,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+187,2,2025-11-20,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+188,2,2025-11-21,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+189,2,2025-11-24,Lunes,0,otoño,Ensalada templada de setas,46,Dorada al horno,51,Arroz con leche,11,True,13.0
+190,2,2025-11-25,Martes,1,otoño,Crema de puerros,47,Pollo al romero,52,Flan casero,12,True,13.0
+191,2,2025-11-26,Miércoles,2,otoño,Hummus con crudités,48,Brochetas de ternera,53,Tarta de manzana,13,True,13.0
+192,2,2025-11-27,Jueves,3,otoño,Tabulé,49,Salmón con verduras,54,Natillas,14,True,13.0
+193,2,2025-11-28,Viernes,4,otoño,Sopa minestrone,50,Musaka griega,55,Coulant de chocolate,15,True,13.0
+194,2,2025-12-01,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+195,2,2025-12-02,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+196,2,2025-12-03,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+197,2,2025-12-04,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+198,2,2025-12-05,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+199,2,2025-12-09,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+200,2,2025-12-10,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+201,2,2025-12-11,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+202,2,2025-12-12,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+203,2,2025-12-15,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+204,2,2025-12-16,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+205,2,2025-12-17,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+206,2,2025-12-18,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+207,2,2025-12-19,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+208,2,2025-12-22,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+209,2,2025-12-23,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+210,2,2025-12-24,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+211,2,2025-12-26,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+212,2,2025-12-29,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+213,2,2025-12-30,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+214,2,2025-12-31,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+215,2,2026-01-02,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+216,2,2026-01-05,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+217,2,2026-01-07,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+218,2,2026-01-08,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+219,2,2026-01-09,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+220,2,2026-01-12,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+221,2,2026-01-13,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+222,2,2026-01-14,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+223,2,2026-01-15,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+224,2,2026-01-16,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+225,2,2026-01-19,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+226,2,2026-01-20,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+227,2,2026-01-21,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+228,2,2026-01-22,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+229,2,2026-01-23,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+230,2,2026-01-26,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+231,2,2026-01-27,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+232,2,2026-01-28,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+233,2,2026-01-29,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+234,2,2026-01-30,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+235,2,2026-02-02,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+236,2,2026-02-03,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+237,2,2026-02-04,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+238,2,2026-02-05,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+239,2,2026-02-06,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+240,2,2026-02-09,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+241,2,2026-02-10,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+242,2,2026-02-11,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+243,2,2026-02-12,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+244,2,2026-02-13,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+245,2,2026-02-16,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+246,2,2026-02-17,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+247,2,2026-02-18,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+248,2,2026-02-19,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+249,2,2026-02-20,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+250,2,2026-02-23,Lunes,0,invierno,Crema de zanahoria y jengibre,56,Cordero al horno,61,Torrijas,26,True,13.0
+251,2,2026-02-24,Martes,1,invierno,Ensalada César,57,Lubina a la sal,62,Tarta de queso,27,True,13.0
+252,2,2026-02-25,Miércoles,2,invierno,Sopa de cebolla,58,Moussaka,63,Crema catalana,28,True,13.0
+253,2,2026-02-26,Jueves,3,invierno,Falafel con ensalada,59,Tajín de pollo,64,Brownie con helado,29,True,13.0
+254,2,2026-02-27,Viernes,4,invierno,Crema de champiñones,60,Bacalao confitado,65,Leche frita,30,True,13.0
+255,2,2026-03-02,Lunes,0,primavera,Ensalada griega,66,Atún a la plancha,71,Fresones con nata,41,True,13.0
+256,2,2026-03-03,Martes,1,primavera,Gazpacho andaluz,67,Pollo con limón y hierbas,72,Helado artesano,42,True,13.0
+257,3,2025-09-01,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+258,3,2025-09-02,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+259,3,2025-09-03,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+260,3,2025-09-04,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+261,3,2025-09-05,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+262,3,2025-09-08,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+263,3,2025-09-09,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+264,3,2025-09-10,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+265,3,2025-09-11,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+266,3,2025-09-12,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+267,3,2025-09-15,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+268,3,2025-09-16,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+269,3,2025-09-17,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+270,3,2025-09-18,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+271,3,2025-09-19,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+272,3,2025-09-22,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+273,3,2025-09-23,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+274,3,2025-09-24,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+275,3,2025-09-25,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+276,3,2025-09-26,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+277,3,2025-09-29,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+278,3,2025-09-30,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+279,3,2025-10-01,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+280,3,2025-10-02,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+281,3,2025-10-03,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+282,3,2025-10-06,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+283,3,2025-10-07,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+284,3,2025-10-08,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+285,3,2025-10-09,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+286,3,2025-10-10,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+287,3,2025-10-13,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+288,3,2025-10-14,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+289,3,2025-10-15,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+290,3,2025-10-16,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+291,3,2025-10-17,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+292,3,2025-10-20,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+293,3,2025-10-21,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+294,3,2025-10-22,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+295,3,2025-10-23,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+296,3,2025-10-24,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+297,3,2025-10-27,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+298,3,2025-10-28,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+299,3,2025-10-29,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+300,3,2025-10-30,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+301,3,2025-10-31,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+302,3,2025-11-03,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+303,3,2025-11-04,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+304,3,2025-11-05,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+305,3,2025-11-06,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+306,3,2025-11-07,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+307,3,2025-11-10,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+308,3,2025-11-11,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+309,3,2025-11-12,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+310,3,2025-11-13,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+311,3,2025-11-14,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+312,3,2025-11-17,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+313,3,2025-11-18,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+314,3,2025-11-19,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+315,3,2025-11-20,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+316,3,2025-11-21,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+317,3,2025-11-24,Lunes,0,otoño,Sopa castellana,1,Pollo asado con patatas,6,Arroz con leche,11,True,11.5
+318,3,2025-11-25,Martes,1,otoño,Lentejas estofadas,2,Merluza en salsa verde,7,Flan casero,12,True,11.5
+319,3,2025-11-26,Miércoles,2,otoño,Crema de calabaza,3,Albóndigas en salsa,8,Tarta de manzana,13,True,11.5
+320,3,2025-11-27,Jueves,3,otoño,Judías con chorizo,4,Lomo a la plancha,9,Natillas,14,True,11.5
+321,3,2025-11-28,Viernes,4,otoño,Puchero madrileño,5,Callos a la madrileña,10,Coulant de chocolate,15,True,11.5
+322,3,2025-12-01,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+323,3,2025-12-02,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+324,3,2025-12-03,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+325,3,2025-12-04,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+326,3,2025-12-05,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+327,3,2025-12-09,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+328,3,2025-12-10,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+329,3,2025-12-11,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+330,3,2025-12-12,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+331,3,2025-12-15,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+332,3,2025-12-16,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+333,3,2025-12-17,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+334,3,2025-12-18,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+335,3,2025-12-19,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+336,3,2025-12-22,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+337,3,2025-12-23,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+338,3,2025-12-24,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+339,3,2025-12-26,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+340,3,2025-12-29,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+341,3,2025-12-30,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+342,3,2025-12-31,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+343,3,2026-01-02,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+344,3,2026-01-05,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+345,3,2026-01-07,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+346,3,2026-01-08,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+347,3,2026-01-09,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+348,3,2026-01-12,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+349,3,2026-01-13,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+350,3,2026-01-14,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+351,3,2026-01-15,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+352,3,2026-01-16,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+353,3,2026-01-19,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+354,3,2026-01-20,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+355,3,2026-01-21,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+356,3,2026-01-22,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+357,3,2026-01-23,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+358,3,2026-01-26,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+359,3,2026-01-27,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+360,3,2026-01-28,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+361,3,2026-01-29,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+362,3,2026-01-30,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+363,3,2026-02-02,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+364,3,2026-02-03,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+365,3,2026-02-04,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+366,3,2026-02-05,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+367,3,2026-02-06,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+368,3,2026-02-09,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+369,3,2026-02-10,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+370,3,2026-02-11,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+371,3,2026-02-12,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+372,3,2026-02-13,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+373,3,2026-02-16,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+374,3,2026-02-17,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+375,3,2026-02-18,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+376,3,2026-02-19,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+377,3,2026-02-20,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+378,3,2026-02-23,Lunes,0,invierno,Cocido madrileño,16,Rabo de toro,21,Torrijas,26,True,11.5
+379,3,2026-02-24,Martes,1,invierno,Sopa de ajo,17,Bacalao al pil pil,22,Tarta de queso,27,True,11.5
+380,3,2026-02-25,Miércoles,2,invierno,Lentejas con verduras,18,Estofado de ternera,23,Crema catalana,28,True,11.5
+381,3,2026-02-26,Jueves,3,invierno,Fabada asturiana,19,Secreto ibérico,24,Brownie con helado,29,True,11.5
+382,3,2026-02-27,Viernes,4,invierno,Potaje de garbanzos,20,Chuletillas de cordero,25,Leche frita,30,True,11.5
+383,3,2026-03-02,Lunes,0,primavera,Gazpacho,31,Pollo al limón,36,Fresones con nata,41,True,11.5
+384,3,2026-03-03,Martes,1,primavera,Ensalada mixta,32,Merluza a la romana,37,Helado artesano,42,True,11.5
+385,4,2025-09-01,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+386,4,2025-09-02,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+387,4,2025-09-03,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+388,4,2025-09-04,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+389,4,2025-09-05,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+390,4,2025-09-08,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+391,4,2025-09-09,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+392,4,2025-09-10,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+393,4,2025-09-11,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+394,4,2025-09-12,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+395,4,2025-09-15,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+396,4,2025-09-16,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+397,4,2025-09-17,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+398,4,2025-09-18,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+399,4,2025-09-19,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+400,4,2025-09-22,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+401,4,2025-09-23,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+402,4,2025-09-24,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+403,4,2025-09-25,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+404,4,2025-09-26,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+405,4,2025-09-29,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+406,4,2025-09-30,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+407,4,2025-10-01,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+408,4,2025-10-02,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+409,4,2025-10-03,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+410,4,2025-10-06,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+411,4,2025-10-07,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+412,4,2025-10-08,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+413,4,2025-10-09,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+414,4,2025-10-10,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+415,4,2025-10-13,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+416,4,2025-10-14,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+417,4,2025-10-15,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+418,4,2025-10-16,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+419,4,2025-10-17,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+420,4,2025-10-20,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+421,4,2025-10-21,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+422,4,2025-10-22,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+423,4,2025-10-23,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+424,4,2025-10-24,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+425,4,2025-10-27,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+426,4,2025-10-28,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+427,4,2025-10-29,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+428,4,2025-10-30,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+429,4,2025-10-31,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+430,4,2025-11-03,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+431,4,2025-11-04,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+432,4,2025-11-05,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+433,4,2025-11-06,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+434,4,2025-11-07,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+435,4,2025-11-10,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+436,4,2025-11-11,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+437,4,2025-11-12,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+438,4,2025-11-13,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+439,4,2025-11-14,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+440,4,2025-11-17,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+441,4,2025-11-18,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+442,4,2025-11-19,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+443,4,2025-11-20,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+444,4,2025-11-21,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+445,4,2025-11-24,Lunes,0,otoño,Minestrone,76,Pasta carbonara,81,Arroz con leche,11,True,14.0
+446,4,2025-11-25,Martes,1,otoño,Bruschetta de tomate,77,Lasaña boloñesa,82,Flan casero,12,True,14.0
+447,4,2025-11-26,Miércoles,2,otoño,Ensalada caprese,78,Scaloppine al limón,83,Tarta de manzana,13,True,14.0
+448,4,2025-11-27,Jueves,3,otoño,Crema de calabacín,79,Pizza margarita,84,Natillas,14,True,14.0
+449,4,2025-11-28,Viernes,4,otoño,Antipasto variado,80,Ravioli de ricotta,85,Coulant de chocolate,15,True,14.0
+450,4,2025-12-01,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+451,4,2025-12-02,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+452,4,2025-12-03,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+453,4,2025-12-04,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+454,4,2025-12-05,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+455,4,2025-12-09,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+456,4,2025-12-10,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+457,4,2025-12-11,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+458,4,2025-12-12,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+459,4,2025-12-15,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+460,4,2025-12-16,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+461,4,2025-12-17,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+462,4,2025-12-18,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+463,4,2025-12-19,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+464,4,2025-12-22,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+465,4,2025-12-23,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+466,4,2025-12-24,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+467,4,2025-12-26,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+468,4,2025-12-29,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+469,4,2025-12-30,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+470,4,2025-12-31,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+471,4,2026-01-02,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+472,4,2026-01-05,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+473,4,2026-01-07,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+474,4,2026-01-08,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+475,4,2026-01-09,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+476,4,2026-01-12,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+477,4,2026-01-13,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+478,4,2026-01-14,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+479,4,2026-01-15,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+480,4,2026-01-16,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+481,4,2026-01-19,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+482,4,2026-01-20,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+483,4,2026-01-21,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+484,4,2026-01-22,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+485,4,2026-01-23,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+486,4,2026-01-26,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+487,4,2026-01-27,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+488,4,2026-01-28,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+489,4,2026-01-29,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+490,4,2026-01-30,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+491,4,2026-02-02,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+492,4,2026-02-03,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+493,4,2026-02-04,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+494,4,2026-02-05,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+495,4,2026-02-06,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+496,4,2026-02-09,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+497,4,2026-02-10,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+498,4,2026-02-11,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+499,4,2026-02-12,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+500,4,2026-02-13,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+501,4,2026-02-16,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+502,4,2026-02-17,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+503,4,2026-02-18,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+504,4,2026-02-19,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+505,4,2026-02-20,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+506,4,2026-02-23,Lunes,0,invierno,Risotto de setas,86,Ossobuco alla milanese,91,Torrijas,26,True,14.0
+507,4,2026-02-24,Martes,1,invierno,Sopa toscana,87,Pasta al ragú,92,Tarta de queso,27,True,14.0
+508,4,2026-02-25,Miércoles,2,invierno,Carpaccio de ternera,88,Saltimbocca romana,93,Crema catalana,28,True,14.0
+509,4,2026-02-26,Jueves,3,invierno,Crema de parmesano,89,Pizza quattro formaggi,94,Brownie con helado,29,True,14.0
+510,4,2026-02-27,Viernes,4,invierno,Bruschetta de champiñones,90,Ñoquis al pesto,95,Leche frita,30,True,14.0
+511,4,2026-03-02,Lunes,0,primavera,Ensalada italiana,96,Pasta primavera,101,Fresones con nata,41,True,14.0
+512,4,2026-03-03,Martes,1,primavera,Caprese con burrata,97,Pizza napolitana,102,Helado artesano,42,True,14.0
+513,5,2025-09-01,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+514,5,2025-09-02,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+515,5,2025-09-03,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+516,5,2025-09-04,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+517,5,2025-09-05,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+518,5,2025-09-08,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+519,5,2025-09-09,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+520,5,2025-09-10,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+521,5,2025-09-11,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+522,5,2025-09-12,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+523,5,2025-09-15,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+524,5,2025-09-16,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+525,5,2025-09-17,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+526,5,2025-09-18,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+527,5,2025-09-19,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+528,5,2025-09-22,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+529,5,2025-09-23,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+530,5,2025-09-24,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+531,5,2025-09-25,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+532,5,2025-09-26,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+533,5,2025-09-29,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+534,5,2025-09-30,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+535,5,2025-10-01,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+536,5,2025-10-02,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+537,5,2025-10-03,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+538,5,2025-10-06,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+539,5,2025-10-07,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+540,5,2025-10-08,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+541,5,2025-10-09,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+542,5,2025-10-10,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+543,5,2025-10-13,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+544,5,2025-10-14,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+545,5,2025-10-15,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+546,5,2025-10-16,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+547,5,2025-10-17,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+548,5,2025-10-20,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+549,5,2025-10-21,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+550,5,2025-10-22,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+551,5,2025-10-23,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+552,5,2025-10-24,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+553,5,2025-10-27,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+554,5,2025-10-28,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+555,5,2025-10-29,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+556,5,2025-10-30,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+557,5,2025-10-31,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+558,5,2025-11-03,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+559,5,2025-11-04,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+560,5,2025-11-05,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+561,5,2025-11-06,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+562,5,2025-11-07,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+563,5,2025-11-10,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+564,5,2025-11-11,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+565,5,2025-11-12,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+566,5,2025-11-13,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+567,5,2025-11-14,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+568,5,2025-11-17,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+569,5,2025-11-18,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+570,5,2025-11-19,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+571,5,2025-11-20,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+572,5,2025-11-21,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+573,5,2025-11-24,Lunes,0,otoño,Sopa de miso,106,Pollo teriyaki,111,Arroz con leche,11,True,11.0
+574,5,2025-11-25,Martes,1,otoño,Rollitos de primavera,107,Pad thai,112,Flan casero,12,True,11.0
+575,5,2025-11-26,Miércoles,2,otoño,Gyozas de cerdo,108,Cerdo agridulce,113,Tarta de manzana,13,True,11.0
+576,5,2025-11-27,Jueves,3,otoño,Ensalada de wakame,109,Curry rojo de pollo,114,Natillas,14,True,11.0
+577,5,2025-11-28,Viernes,4,otoño,Edamame,110,Arroz frito con gambas,115,Coulant de chocolate,15,True,11.0
+578,5,2025-12-01,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+579,5,2025-12-02,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+580,5,2025-12-03,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+581,5,2025-12-04,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+582,5,2025-12-05,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+583,5,2025-12-09,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+584,5,2025-12-10,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+585,5,2025-12-11,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+586,5,2025-12-12,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+587,5,2025-12-15,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+588,5,2025-12-16,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+589,5,2025-12-17,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+590,5,2025-12-18,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+591,5,2025-12-19,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+592,5,2025-12-22,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+593,5,2025-12-23,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+594,5,2025-12-24,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+595,5,2025-12-26,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+596,5,2025-12-29,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+597,5,2025-12-30,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+598,5,2025-12-31,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+599,5,2026-01-02,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+600,5,2026-01-05,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+601,5,2026-01-07,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+602,5,2026-01-08,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+603,5,2026-01-09,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+604,5,2026-01-12,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+605,5,2026-01-13,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+606,5,2026-01-14,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+607,5,2026-01-15,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+608,5,2026-01-16,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+609,5,2026-01-19,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+610,5,2026-01-20,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+611,5,2026-01-21,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+612,5,2026-01-22,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+613,5,2026-01-23,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+614,5,2026-01-26,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+615,5,2026-01-27,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+616,5,2026-01-28,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+617,5,2026-01-29,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+618,5,2026-01-30,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+619,5,2026-02-02,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+620,5,2026-02-03,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+621,5,2026-02-04,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+622,5,2026-02-05,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+623,5,2026-02-06,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+624,5,2026-02-09,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+625,5,2026-02-10,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+626,5,2026-02-11,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+627,5,2026-02-12,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+628,5,2026-02-13,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+629,5,2026-02-16,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+630,5,2026-02-17,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+631,5,2026-02-18,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+632,5,2026-02-19,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+633,5,2026-02-20,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+634,5,2026-02-23,Lunes,0,invierno,Ramen de cerdo,116,Ramen tonkotsu,121,Torrijas,26,True,11.0
+635,5,2026-02-24,Martes,1,invierno,Sopa tom yum,117,Curry japonés,122,Tarta de queso,27,True,11.0
+636,5,2026-02-25,Miércoles,2,invierno,Wonton soup,118,Pato pekinés,123,Crema catalana,28,True,11.0
+637,5,2026-02-26,Jueves,3,invierno,Dim sum variado,119,Bibimbap,124,Brownie con helado,29,True,11.0
+638,5,2026-02-27,Viernes,4,invierno,Sopa pho,120,Noodles con ternera,125,Leche frita,30,True,11.0
+639,5,2026-03-02,Lunes,0,primavera,Ensalada thai,126,Salmón teriyaki,131,Fresones con nata,41,True,11.0
+640,5,2026-03-03,Martes,1,primavera,Rollitos vietnamitas,127,Pollo kung pao,132,Helado artesano,42,True,11.0
+641,6,2025-09-01,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+642,6,2025-09-02,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+643,6,2025-09-03,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+644,6,2025-09-04,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+645,6,2025-09-05,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+646,6,2025-09-08,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+647,6,2025-09-09,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+648,6,2025-09-10,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+649,6,2025-09-11,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+650,6,2025-09-12,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+651,6,2025-09-15,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+652,6,2025-09-16,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+653,6,2025-09-17,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+654,6,2025-09-18,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+655,6,2025-09-19,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+656,6,2025-09-22,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+657,6,2025-09-23,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+658,6,2025-09-24,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+659,6,2025-09-25,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+660,6,2025-09-26,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+661,6,2025-09-29,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+662,6,2025-09-30,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+663,6,2025-10-01,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+664,6,2025-10-02,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+665,6,2025-10-03,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+666,6,2025-10-06,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+667,6,2025-10-07,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+668,6,2025-10-08,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+669,6,2025-10-09,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+670,6,2025-10-10,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+671,6,2025-10-13,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+672,6,2025-10-14,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+673,6,2025-10-15,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+674,6,2025-10-16,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+675,6,2025-10-17,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+676,6,2025-10-20,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+677,6,2025-10-21,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+678,6,2025-10-22,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+679,6,2025-10-23,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+680,6,2025-10-24,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+681,6,2025-10-27,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+682,6,2025-10-28,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+683,6,2025-10-29,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+684,6,2025-10-30,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+685,6,2025-10-31,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+686,6,2025-11-03,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+687,6,2025-11-04,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+688,6,2025-11-05,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+689,6,2025-11-06,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+690,6,2025-11-07,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+691,6,2025-11-10,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+692,6,2025-11-11,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+693,6,2025-11-12,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+694,6,2025-11-13,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+695,6,2025-11-14,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+696,6,2025-11-17,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+697,6,2025-11-18,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+698,6,2025-11-19,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+699,6,2025-11-20,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+700,6,2025-11-21,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+701,6,2025-11-24,Lunes,0,otoño,Ensalada valenciana,136,Arroz con pollo,141,Arroz con leche,11,True,14.5
+702,6,2025-11-25,Martes,1,otoño,Croquetas de jamón,137,Paella de marisco,142,Flan casero,12,True,14.5
+703,6,2025-11-26,Miércoles,2,otoño,Mejillones al vapor,138,Arroz al horno,143,Tarta de manzana,13,True,14.5
+704,6,2025-11-27,Jueves,3,otoño,Pimientos del piquillo rellenos,139,Arroz negro,144,Natillas,14,True,14.5
+705,6,2025-11-28,Viernes,4,otoño,Sopa de pescado,140,Fideuá,145,Coulant de chocolate,15,True,14.5
+706,6,2025-12-01,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+707,6,2025-12-02,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+708,6,2025-12-03,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+709,6,2025-12-04,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+710,6,2025-12-05,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+711,6,2025-12-09,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+712,6,2025-12-10,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+713,6,2025-12-11,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+714,6,2025-12-12,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+715,6,2025-12-15,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+716,6,2025-12-16,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+717,6,2025-12-17,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+718,6,2025-12-18,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+719,6,2025-12-19,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+720,6,2025-12-22,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+721,6,2025-12-23,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+722,6,2025-12-24,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+723,6,2025-12-26,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+724,6,2025-12-29,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+725,6,2025-12-30,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+726,6,2025-12-31,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+727,6,2026-01-02,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+728,6,2026-01-05,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+729,6,2026-01-07,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+730,6,2026-01-08,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+731,6,2026-01-09,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+732,6,2026-01-12,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+733,6,2026-01-13,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+734,6,2026-01-14,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+735,6,2026-01-15,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+736,6,2026-01-16,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+737,6,2026-01-19,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+738,6,2026-01-20,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+739,6,2026-01-21,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+740,6,2026-01-22,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+741,6,2026-01-23,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+742,6,2026-01-26,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+743,6,2026-01-27,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+744,6,2026-01-28,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+745,6,2026-01-29,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+746,6,2026-01-30,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+747,6,2026-02-02,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+748,6,2026-02-03,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+749,6,2026-02-04,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+750,6,2026-02-05,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+751,6,2026-02-06,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+752,6,2026-02-09,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+753,6,2026-02-10,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+754,6,2026-02-11,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+755,6,2026-02-12,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+756,6,2026-02-13,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+757,6,2026-02-16,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+758,6,2026-02-17,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+759,6,2026-02-18,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+760,6,2026-02-19,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+761,6,2026-02-20,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+762,6,2026-02-23,Lunes,0,invierno,Sopa de marisco,146,Arroz caldoso de bogavante,151,Torrijas,26,True,14.5
+763,6,2026-02-24,Martes,1,invierno,Croquetas de bacalao,147,Paella mixta,152,Tarta de queso,27,True,14.5
+764,6,2026-02-25,Miércoles,2,invierno,Calamares a la romana,148,Arroz con costillas,153,Crema catalana,28,True,14.5
+765,6,2026-02-26,Jueves,3,invierno,Pimientos asados,149,Arroz a banda,154,Brownie con helado,29,True,14.5
+766,6,2026-02-27,Viernes,4,invierno,Patatas bravas,150,Arroz con verduras,155,Leche frita,30,True,14.5
+767,6,2026-03-02,Lunes,0,primavera,Ensalada de pulpo,156,Paella valenciana,161,Fresones con nata,41,True,14.5
+768,6,2026-03-03,Martes,1,primavera,Gazpacho manchego,157,Arroz con gambas,162,Helado artesano,42,True,14.5
+769,7,2025-09-01,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+770,7,2025-09-02,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+771,7,2025-09-03,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+772,7,2025-09-04,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+773,7,2025-09-05,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+774,7,2025-09-08,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+775,7,2025-09-09,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+776,7,2025-09-10,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+777,7,2025-09-11,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+778,7,2025-09-12,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+779,7,2025-09-15,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+780,7,2025-09-16,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+781,7,2025-09-17,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+782,7,2025-09-18,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+783,7,2025-09-19,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+784,7,2025-09-22,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+785,7,2025-09-23,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+786,7,2025-09-24,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+787,7,2025-09-25,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+788,7,2025-09-26,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+789,7,2025-09-29,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+790,7,2025-09-30,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+791,7,2025-10-01,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+792,7,2025-10-02,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+793,7,2025-10-03,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+794,7,2025-10-06,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+795,7,2025-10-07,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+796,7,2025-10-08,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+797,7,2025-10-09,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+798,7,2025-10-10,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+799,7,2025-10-13,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+800,7,2025-10-14,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+801,7,2025-10-15,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+802,7,2025-10-16,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+803,7,2025-10-17,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+804,7,2025-10-20,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+805,7,2025-10-21,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+806,7,2025-10-22,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+807,7,2025-10-23,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+808,7,2025-10-24,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+809,7,2025-10-27,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+810,7,2025-10-28,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+811,7,2025-10-29,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+812,7,2025-10-30,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+813,7,2025-10-31,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+814,7,2025-11-03,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+815,7,2025-11-04,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+816,7,2025-11-05,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+817,7,2025-11-06,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+818,7,2025-11-07,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+819,7,2025-11-10,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+820,7,2025-11-11,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+821,7,2025-11-12,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+822,7,2025-11-13,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+823,7,2025-11-14,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+824,7,2025-11-17,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+825,7,2025-11-18,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+826,7,2025-11-19,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+827,7,2025-11-20,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+828,7,2025-11-21,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+829,7,2025-11-24,Lunes,0,otoño,Sopa castellana de setas,166,Chuletón de ternera,170,Arroz con leche,11,True,15.0
+830,7,2025-11-25,Martes,1,otoño,Morcilla de Burgos,167,Cochinillo asado,171,Flan casero,12,True,15.0
+831,7,2025-11-26,Miércoles,2,otoño,Pimientos asados,149,Costillas de cerdo,172,Tarta de manzana,13,True,15.0
+832,7,2025-11-27,Jueves,3,otoño,Ensalada templada,168,Entrecot a la brasa,173,Natillas,14,True,15.0
+833,7,2025-11-28,Viernes,4,otoño,Patatas revolconas,169,Chuletas de cordero,174,Coulant de chocolate,15,True,15.0
+834,7,2025-12-01,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+835,7,2025-12-02,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+836,7,2025-12-03,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+837,7,2025-12-04,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+838,7,2025-12-05,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+839,7,2025-12-09,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+840,7,2025-12-10,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+841,7,2025-12-11,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+842,7,2025-12-12,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+843,7,2025-12-15,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+844,7,2025-12-16,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+845,7,2025-12-17,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+846,7,2025-12-18,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+847,7,2025-12-19,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+848,7,2025-12-22,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+849,7,2025-12-23,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+850,7,2025-12-24,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+851,7,2025-12-26,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+852,7,2025-12-29,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+853,7,2025-12-30,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+854,7,2025-12-31,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+855,7,2026-01-02,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+856,7,2026-01-05,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+857,7,2026-01-07,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+858,7,2026-01-08,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+859,7,2026-01-09,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+860,7,2026-01-12,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+861,7,2026-01-13,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+862,7,2026-01-14,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+863,7,2026-01-15,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+864,7,2026-01-16,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+865,7,2026-01-19,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+866,7,2026-01-20,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+867,7,2026-01-21,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+868,7,2026-01-22,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+869,7,2026-01-23,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+870,7,2026-01-26,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+871,7,2026-01-27,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+872,7,2026-01-28,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+873,7,2026-01-29,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+874,7,2026-01-30,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+875,7,2026-02-02,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+876,7,2026-02-03,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+877,7,2026-02-04,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+878,7,2026-02-05,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+879,7,2026-02-06,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+880,7,2026-02-09,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+881,7,2026-02-10,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+882,7,2026-02-11,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+883,7,2026-02-12,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+884,7,2026-02-13,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+885,7,2026-02-16,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+886,7,2026-02-17,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+887,7,2026-02-18,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+888,7,2026-02-19,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+889,7,2026-02-20,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+890,7,2026-02-23,Lunes,0,invierno,Sopa de cocido,175,Lechazo asado,180,Torrijas,26,True,15.0
+891,7,2026-02-24,Martes,1,invierno,Croquetas caseras,176,Chuletón de buey,181,Tarta de queso,27,True,15.0
+892,7,2026-02-25,Miércoles,2,invierno,Morcilla con pimientos,177,Secreto ibérico a la brasa,182,Crema catalana,28,True,15.0
+893,7,2026-02-26,Jueves,3,invierno,Ensalada de escarola,178,Solomillo al whisky,183,Brownie con helado,29,True,15.0
+894,7,2026-02-27,Viernes,4,invierno,Revuelto de morcilla,179,Codillo asado,184,Leche frita,30,True,15.0
+895,7,2026-03-02,Lunes,0,primavera,Ensalada de tomate,185,Entrecot con patatas,190,Fresones con nata,41,True,15.0
+896,7,2026-03-03,Martes,1,primavera,Parrillada de verduras,186,Pollo de corral asado,191,Helado artesano,42,True,15.0
+897,8,2025-09-01,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+898,8,2025-09-02,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+899,8,2025-09-03,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+900,8,2025-09-04,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+901,8,2025-09-05,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+902,8,2025-09-08,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+903,8,2025-09-09,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+904,8,2025-09-10,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+905,8,2025-09-11,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+906,8,2025-09-12,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+907,8,2025-09-15,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+908,8,2025-09-16,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+909,8,2025-09-17,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+910,8,2025-09-18,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+911,8,2025-09-19,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+912,8,2025-09-22,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+913,8,2025-09-23,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+914,8,2025-09-24,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+915,8,2025-09-25,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+916,8,2025-09-26,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+917,8,2025-09-29,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+918,8,2025-09-30,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+919,8,2025-10-01,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+920,8,2025-10-02,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+921,8,2025-10-03,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+922,8,2025-10-06,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+923,8,2025-10-07,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+924,8,2025-10-08,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+925,8,2025-10-09,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+926,8,2025-10-10,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+927,8,2025-10-13,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+928,8,2025-10-14,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+929,8,2025-10-15,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+930,8,2025-10-16,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+931,8,2025-10-17,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+932,8,2025-10-20,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+933,8,2025-10-21,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+934,8,2025-10-22,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+935,8,2025-10-23,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+936,8,2025-10-24,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+937,8,2025-10-27,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+938,8,2025-10-28,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+939,8,2025-10-29,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+940,8,2025-10-30,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+941,8,2025-10-31,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+942,8,2025-11-03,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+943,8,2025-11-04,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+944,8,2025-11-05,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+945,8,2025-11-06,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+946,8,2025-11-07,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+947,8,2025-11-10,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+948,8,2025-11-11,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+949,8,2025-11-12,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+950,8,2025-11-13,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+951,8,2025-11-14,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+952,8,2025-11-17,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+953,8,2025-11-18,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+954,8,2025-11-19,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+955,8,2025-11-20,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+956,8,2025-11-21,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+957,8,2025-11-24,Lunes,0,otoño,Crema de calabaza y curry,195,Curry de garbanzos,200,Arroz con leche,11,True,12.0
+958,8,2025-11-25,Martes,1,otoño,Ensalada de quinoa,196,Lasaña de verduras,201,Flan casero,12,True,12.0
+959,8,2025-11-26,Miércoles,2,otoño,Hummus casero,197,Hamburguesa vegana,202,Tarta de manzana,13,True,12.0
+960,8,2025-11-27,Jueves,3,otoño,Sopa de lentejas rojas,198,Tofu salteado,203,Natillas,14,True,12.0
+961,8,2025-11-28,Viernes,4,otoño,Rollitos de col,199,Bowl de lentejas,204,Coulant de chocolate,15,True,12.0
+962,8,2025-12-01,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+963,8,2025-12-02,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+964,8,2025-12-03,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+965,8,2025-12-04,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+966,8,2025-12-05,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+967,8,2025-12-09,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+968,8,2025-12-10,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+969,8,2025-12-11,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+970,8,2025-12-12,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+971,8,2025-12-15,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+972,8,2025-12-16,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+973,8,2025-12-17,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+974,8,2025-12-18,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+975,8,2025-12-19,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+976,8,2025-12-22,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+977,8,2025-12-23,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+978,8,2025-12-24,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+979,8,2025-12-26,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+980,8,2025-12-29,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+981,8,2025-12-30,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+982,8,2025-12-31,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+983,8,2026-01-02,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+984,8,2026-01-05,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+985,8,2026-01-07,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+986,8,2026-01-08,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+987,8,2026-01-09,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+988,8,2026-01-12,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+989,8,2026-01-13,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+990,8,2026-01-14,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+991,8,2026-01-15,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+992,8,2026-01-16,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+993,8,2026-01-19,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+994,8,2026-01-20,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+995,8,2026-01-21,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+996,8,2026-01-22,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+997,8,2026-01-23,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+998,8,2026-01-26,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+999,8,2026-01-27,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+1000,8,2026-01-28,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+1001,8,2026-01-29,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+1002,8,2026-01-30,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+1003,8,2026-02-02,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+1004,8,2026-02-03,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+1005,8,2026-02-04,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+1006,8,2026-02-05,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+1007,8,2026-02-06,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+1008,8,2026-02-09,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+1009,8,2026-02-10,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+1010,8,2026-02-11,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+1011,8,2026-02-12,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+1012,8,2026-02-13,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+1013,8,2026-02-16,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+1014,8,2026-02-17,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+1015,8,2026-02-18,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+1016,8,2026-02-19,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+1017,8,2026-02-20,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+1018,8,2026-02-23,Lunes,0,invierno,Crema de brócoli,205,Estofado de soja,210,Torrijas,26,True,12.0
+1019,8,2026-02-24,Martes,1,invierno,Bowl de boniato asado,206,Risotto de setas,211,Tarta de queso,27,True,12.0
+1020,8,2026-02-25,Miércoles,2,invierno,Sopa de miso vegana,207,Chili sin carne,212,Crema catalana,28,True,12.0
+1021,8,2026-02-26,Jueves,3,invierno,Falafel casero,208,Guiso de judías,213,Brownie con helado,29,True,12.0
+1022,8,2026-02-27,Viernes,4,invierno,Crema de coliflor,209,Pasta integral con verduras,214,Leche frita,30,True,12.0
+1023,8,2026-03-02,Lunes,0,primavera,Gazpacho verde,215,Bowl hawaiano vegano,220,Fresones con nata,41,True,12.0
+1024,8,2026-03-03,Martes,1,primavera,Ensalada power bowl,216,Wrap de falafel,221,Helado artesano,42,True,12.0
+1025,9,2025-09-01,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1026,9,2025-09-02,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1027,9,2025-09-03,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1028,9,2025-09-04,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1029,9,2025-09-05,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1030,9,2025-09-08,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1031,9,2025-09-09,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1032,9,2025-09-10,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1033,9,2025-09-11,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1034,9,2025-09-12,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1035,9,2025-09-15,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1036,9,2025-09-16,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1037,9,2025-09-17,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1038,9,2025-09-18,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1039,9,2025-09-19,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1040,9,2025-09-22,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1041,9,2025-09-23,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1042,9,2025-09-24,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1043,9,2025-09-25,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1044,9,2025-09-26,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1045,9,2025-09-29,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1046,9,2025-09-30,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1047,9,2025-10-01,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1048,9,2025-10-02,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1049,9,2025-10-03,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1050,9,2025-10-06,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1051,9,2025-10-07,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1052,9,2025-10-08,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1053,9,2025-10-09,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1054,9,2025-10-10,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1055,9,2025-10-13,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1056,9,2025-10-14,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1057,9,2025-10-15,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1058,9,2025-10-16,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1059,9,2025-10-17,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1060,9,2025-10-20,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1061,9,2025-10-21,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1062,9,2025-10-22,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1063,9,2025-10-23,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1064,9,2025-10-24,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1065,9,2025-10-27,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1066,9,2025-10-28,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1067,9,2025-10-29,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1068,9,2025-10-30,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1069,9,2025-10-31,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1070,9,2025-11-03,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1071,9,2025-11-04,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1072,9,2025-11-05,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1073,9,2025-11-06,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1074,9,2025-11-07,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1075,9,2025-11-10,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1076,9,2025-11-11,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1077,9,2025-11-12,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1078,9,2025-11-13,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1079,9,2025-11-14,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1080,9,2025-11-17,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1081,9,2025-11-18,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1082,9,2025-11-19,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1083,9,2025-11-20,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1084,9,2025-11-21,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1085,9,2025-11-24,Lunes,0,otoño,Salpicón de marisco,225,Merluza a la vasca,229,Arroz con leche,11,True,16.0
+1086,9,2025-11-25,Martes,1,otoño,Gambas al ajillo,226,Paella de marisco,142,Flan casero,12,True,16.0
+1087,9,2025-11-26,Miércoles,2,otoño,Mejillones a la marinera,227,Lubina a la espalda,230,Tarta de manzana,13,True,16.0
+1088,9,2025-11-27,Jueves,3,otoño,Ensalada de mariscos,228,Gambas a la plancha,231,Natillas,14,True,16.0
+1089,9,2025-11-28,Viernes,4,otoño,Sopa de pescado,140,Rape alangostado,232,Coulant de chocolate,15,True,16.0
+1090,9,2025-12-01,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1091,9,2025-12-02,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1092,9,2025-12-03,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1093,9,2025-12-04,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1094,9,2025-12-05,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1095,9,2025-12-09,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1096,9,2025-12-10,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1097,9,2025-12-11,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1098,9,2025-12-12,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1099,9,2025-12-15,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1100,9,2025-12-16,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1101,9,2025-12-17,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1102,9,2025-12-18,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1103,9,2025-12-19,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1104,9,2025-12-22,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1105,9,2025-12-23,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1106,9,2025-12-24,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1107,9,2025-12-26,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1108,9,2025-12-29,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1109,9,2025-12-30,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1110,9,2025-12-31,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1111,9,2026-01-02,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1112,9,2026-01-05,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1113,9,2026-01-07,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1114,9,2026-01-08,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1115,9,2026-01-09,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1116,9,2026-01-12,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1117,9,2026-01-13,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1118,9,2026-01-14,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1119,9,2026-01-15,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1120,9,2026-01-16,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1121,9,2026-01-19,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1122,9,2026-01-20,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1123,9,2026-01-21,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1124,9,2026-01-22,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1125,9,2026-01-23,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1126,9,2026-01-26,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1127,9,2026-01-27,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1128,9,2026-01-28,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1129,9,2026-01-29,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1130,9,2026-01-30,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1131,9,2026-02-02,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1132,9,2026-02-03,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1133,9,2026-02-04,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1134,9,2026-02-05,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1135,9,2026-02-06,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1136,9,2026-02-09,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1137,9,2026-02-10,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1138,9,2026-02-11,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1139,9,2026-02-12,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1140,9,2026-02-13,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1141,9,2026-02-16,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1142,9,2026-02-17,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1143,9,2026-02-18,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1144,9,2026-02-19,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1145,9,2026-02-20,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1146,9,2026-02-23,Lunes,0,invierno,Sopa de marisco,146,Bacalao gratinado,237,Torrijas,26,True,16.0
+1147,9,2026-02-24,Martes,1,invierno,Cazuela de almejas,233,Zarzuela de pescado,238,Tarta de queso,27,True,16.0
+1148,9,2026-02-25,Miércoles,2,invierno,Pulpo a la gallega,234,Rodaballo al horno,239,Crema catalana,28,True,16.0
+1149,9,2026-02-26,Jueves,3,invierno,Navajas a la plancha,235,Merluza en salsa,240,Brownie con helado,29,True,16.0
+1150,9,2026-02-27,Viernes,4,invierno,Vieiras gratinadas,236,Chipirones encebollados,241,Leche frita,30,True,16.0
+1151,9,2026-03-02,Lunes,0,primavera,Cóctel de gambas,242,Dorada a la sal,247,Fresones con nata,41,True,16.0
+1152,9,2026-03-03,Martes,1,primavera,Ensalada de langostinos,243,Gambas al ajillo,248,Helado artesano,42,True,16.0
+1153,10,2025-09-01,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1154,10,2025-09-02,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1155,10,2025-09-03,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1156,10,2025-09-04,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1157,10,2025-09-05,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1158,10,2025-09-08,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1159,10,2025-09-09,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1160,10,2025-09-10,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1161,10,2025-09-11,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1162,10,2025-09-12,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1163,10,2025-09-15,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1164,10,2025-09-16,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1165,10,2025-09-17,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1166,10,2025-09-18,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1167,10,2025-09-19,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1168,10,2025-09-22,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1169,10,2025-09-23,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1170,10,2025-09-24,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1171,10,2025-09-25,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1172,10,2025-09-26,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1173,10,2025-09-29,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1174,10,2025-09-30,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1175,10,2025-10-01,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1176,10,2025-10-02,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1177,10,2025-10-03,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1178,10,2025-10-06,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1179,10,2025-10-07,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1180,10,2025-10-08,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1181,10,2025-10-09,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1182,10,2025-10-10,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1183,10,2025-10-13,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1184,10,2025-10-14,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1185,10,2025-10-15,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1186,10,2025-10-16,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1187,10,2025-10-17,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1188,10,2025-10-20,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1189,10,2025-10-21,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1190,10,2025-10-22,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1191,10,2025-10-23,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1192,10,2025-10-24,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1193,10,2025-10-27,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1194,10,2025-10-28,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1195,10,2025-10-29,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1196,10,2025-10-30,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1197,10,2025-10-31,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1198,10,2025-11-03,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1199,10,2025-11-04,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1200,10,2025-11-05,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1201,10,2025-11-06,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1202,10,2025-11-07,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1203,10,2025-11-10,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1204,10,2025-11-11,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1205,10,2025-11-12,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1206,10,2025-11-13,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1207,10,2025-11-14,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1208,10,2025-11-17,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1209,10,2025-11-18,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1210,10,2025-11-19,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1211,10,2025-11-20,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1212,10,2025-11-21,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1213,10,2025-11-24,Lunes,0,otoño,Sopa azteca,252,Tacos al pastor,257,Arroz con leche,11,True,11.0
+1214,10,2025-11-25,Martes,1,otoño,Nachos con guacamole,253,Enchiladas rojas,258,Flan casero,12,True,11.0
+1215,10,2025-11-26,Miércoles,2,otoño,Elote asado,254,Burrito de pollo,259,Tarta de manzana,13,True,11.0
+1216,10,2025-11-27,Jueves,3,otoño,Quesadillas de queso,255,Fajitas de ternera,260,Natillas,14,True,11.0
+1217,10,2025-11-28,Viernes,4,otoño,Totopos con pico de gallo,256,Chili con carne,261,Coulant de chocolate,15,True,11.0
+1218,10,2025-12-01,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1219,10,2025-12-02,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1220,10,2025-12-03,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1221,10,2025-12-04,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1222,10,2025-12-05,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1223,10,2025-12-09,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1224,10,2025-12-10,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1225,10,2025-12-11,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1226,10,2025-12-12,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1227,10,2025-12-15,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1228,10,2025-12-16,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1229,10,2025-12-17,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1230,10,2025-12-18,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1231,10,2025-12-19,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1232,10,2025-12-22,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1233,10,2025-12-23,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1234,10,2025-12-24,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1235,10,2025-12-26,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1236,10,2025-12-29,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1237,10,2025-12-30,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1238,10,2025-12-31,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1239,10,2026-01-02,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1240,10,2026-01-05,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1241,10,2026-01-07,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1242,10,2026-01-08,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1243,10,2026-01-09,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1244,10,2026-01-12,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1245,10,2026-01-13,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1246,10,2026-01-14,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1247,10,2026-01-15,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1248,10,2026-01-16,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1249,10,2026-01-19,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1250,10,2026-01-20,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1251,10,2026-01-21,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1252,10,2026-01-22,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1253,10,2026-01-23,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1254,10,2026-01-26,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1255,10,2026-01-27,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1256,10,2026-01-28,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1257,10,2026-01-29,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1258,10,2026-01-30,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1259,10,2026-02-02,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1260,10,2026-02-03,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1261,10,2026-02-04,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1262,10,2026-02-05,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1263,10,2026-02-06,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1264,10,2026-02-09,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1265,10,2026-02-10,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1266,10,2026-02-11,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1267,10,2026-02-12,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1268,10,2026-02-13,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1269,10,2026-02-16,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1270,10,2026-02-17,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1271,10,2026-02-18,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1272,10,2026-02-19,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1273,10,2026-02-20,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1274,10,2026-02-23,Lunes,0,invierno,Pozole rojo,262,Tamales de cerdo,267,Torrijas,26,True,11.0
+1275,10,2026-02-24,Martes,1,invierno,Queso fundido con chorizo,263,Mole poblano,268,Tarta de queso,27,True,11.0
+1276,10,2026-02-25,Miércoles,2,invierno,Sopa de tortilla,264,Burritos de carne asada,269,Crema catalana,28,True,11.0
+1277,10,2026-02-26,Jueves,3,invierno,Nachos gratinados,265,Enchiladas verdes,270,Brownie con helado,29,True,11.0
+1278,10,2026-02-27,Viernes,4,invierno,Flautas de pollo,266,Chilaquiles rojos,271,Leche frita,30,True,11.0
+1279,10,2026-03-02,Lunes,0,primavera,Guacamole fresco,272,Tacos de pescado,277,Fresones con nata,41,True,11.0
+1280,10,2026-03-03,Martes,1,primavera,Ensalada mexicana,273,Bowl mexicano,278,Helado artesano,42,True,11.0

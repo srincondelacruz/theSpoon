@@ -1,0 +1,11 @@
+restaurante_id,nombre,direccion,tipo_cocina,latitud,longitud,precio_medio,horario_apertura,horario_cierre,capacidad_maxima
+1,Casa Hortensia,"Calle Orense 32, Madrid",Tradicional Española,40.4512,-3.6925,12.5,13:00,16:00,70
+2,El Rincón de Azca,"Paseo de la Castellana 89, Madrid",Mediterránea,40.4518,-3.6932,13.0,13:00,16:00,37
+3,La Taberna del Volapié,"Calle Rosario Pino 12, Madrid",Tradicional Española,40.4505,-3.691,11.5,13:00,16:00,31
+4,Trattoria Azca,"Calle Capitán Haya 19, Madrid",Italiana,40.4525,-3.694,14.0,13:00,16:00,77
+5,Wok Garden,"Calle Orense 16, Madrid",Asiática,40.453,-3.6918,11.0,13:00,16:00,47
+6,La Albufera,"Calle Pedro Teixeira 8, Madrid",Arrocería,40.4508,-3.695,14.5,13:00,16:00,45
+7,El Asador de Azca,"Paseo de la Castellana 93, Madrid",Asador,40.4522,-3.6928,15.0,13:00,16:00,44
+8,Verde & Más,"Calle Sor Ángela de la Cruz 4, Madrid",Vegetariana,40.4515,-3.6935,12.0,13:00,16:00,38
+9,Marisquería Nautilus,"Calle Orense 68, Madrid",Marisquería,40.4528,-3.6912,16.0,13:00,16:00,77
+10,Taquería La Lupe,"Calle Capitán Haya 1, Madrid",Mexicana,40.4502,-3.6942,11.0,13:00,16:00,36
