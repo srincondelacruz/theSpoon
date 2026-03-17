@@ -36,7 +36,7 @@ const Dashboard = ({ session }) => {
     formData.append("temporada", "invierno");
     
     try {
-      const response = await fetch("http://localhost:8000/api/predict_menu_full", {
+      const response = await fetch("/api/predict_menu_full", {
         method: "POST",
         body: formData,
       });

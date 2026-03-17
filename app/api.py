@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import sys
 import os
+import traceback
 from typing import Optional
 
 # Ensure the scripts directory is in the path to import interprete_menu
@@ -175,6 +176,7 @@ async def predict_menu_full(
             "prediccion": resultado_ml,
             "raw_ocr_text": ocr_text
         }
-        
+
     except Exception as e:
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))

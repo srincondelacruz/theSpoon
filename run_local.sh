@@ -18,7 +18,14 @@ pkill -f "vite" >/dev/null 2>&1
 
 # 2. Iniciar el Backend (FastAPI) en segundo plano
 echo -e "\n${BLUE}[Backend]${NC} Activando entorno de Python y levantando Inteligencia Artificial (FastAPI)..."
-source venv/bin/activate
+if [ -f .venv/bin/activate ]; then
+    source .venv/bin/activate
+elif [ -f venv/bin/activate ]; then
+    source venv/bin/activate
+else
+    echo -e "\033[0;31m[Error] No se encontró entorno virtual (venv/ ni .venv/). Créalo primero.\033[0m"
+    exit 1
+fi
 uvicorn app.api:app --reload --port 8000 --host 0.0.0.0 &
 FASTAPI_PID=$!
 

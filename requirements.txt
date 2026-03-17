@@ -6,7 +6,11 @@ xgboost
 joblib
 faker
 azure-ai-vision-imageanalysis
+azure-ai-documentintelligence
 python-dotenv
 transformers
 torch
 sentencepiece
+fastapi
+uvicorn
+python-multipart

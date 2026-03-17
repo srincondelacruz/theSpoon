@@ -1,0 +1,1209 @@
+{
+	"status": "succeeded",
+	"createdDateTime": "2026-03-17T08:15:46Z",
+	"lastUpdatedDateTime": "2026-03-17T08:15:46Z",
+	"analyzeResult": {
+		"apiVersion": "2024-11-30",
+		"modelId": "ocr-4",
+		"stringIndexType": "utf16CodeUnit",
+		"content": "NUESTRO TRADICIONAL MENÚ DEL DÍA 14€ (IVA Incl.)\nDE PRIMEROS DE SEGUNDOS Butifarra con Alubias Zarzuela de Pescado\nY DE POSTRE ..\nEscudella Catalana Pimientos Rellenos\nCrema Catalana Fruta del Tiempo",
+		"pages": [
+			{
+				"pageNumber": 1,
+				"angle": 0.044099241495132446,
+				"width": 2816,
+				"height": 1536,
+				"unit": "pixel",
+				"words": [
+					{
+						"content": "NUESTRO",
+						"polygon": [
+							583,
+							336,
+							1003,
+							341,
+							1003,
+							528,
+							583,
+							527
+						],
+						"confidence": 0.976,
+						"span": {
+							"offset": 0,
+							"length": 7
+						}
+					},
+					{
+						"content": "TRADICIONAL",
+						"polygon": [
+							1039,
+							342,
+							1579,
+							350,
+							1579,
+							528,
+							1039,
+							528
+						],
+						"confidence": 0.941,
+						"span": {
+							"offset": 8,
+							"length": 11
+						}
+					},
+					{
+						"content": "MENÚ",
+						"polygon": [
+							1615,
+							349,
+							1866,
+							351,
+							1867,
+							528,
+							1615,
+							528
+						],
+						"confidence": 0.976,
+						"span": {
+							"offset": 20,
+							"length": 4
+						}
+					},
+					{
+						"content": "DEL",
+						"polygon": [
+							1902,
+							352,
+							2058,
+							351,
+							2059,
+							528,
+							1903,
+							528
+						],
+						"confidence": 0.991,
+						"span": {
+							"offset": 25,
+							"length": 3
+						}
+					},
+					{
+						"content": "DÍA",
+						"polygon": [
+							2094,
+							351,
+							2279,
+							351,
+							2279,
+							528,
+							2095,
+							528
+						],
+						"confidence": 0.968,
+						"span": {
+							"offset": 29,
+							"length": 3
+						}
+					},
+					{
+						"content": "14€",
+						"polygon": [
+							1197,
+							528,
+							1354,
+							530,
+							1353,
+							658,
+							1197,
+							658
+						],
+						"confidence": 0.985,
+						"span": {
+							"offset": 33,
+							"length": 3
+						}
+					},
+					{
+						"content": "(IVA",
+						"polygon": [
+							1378,
+							530,
+							1518,
+							534,
+							1518,
+							658,
+							1378,
+							658
+						],
+						"confidence": 0.968,
+						"span": {
+							"offset": 37,
+							"length": 4
+						}
+					},
+					{
+						"content": "Incl.)",
+						"polygon": [
+							1543,
+							535,
+							1724,
+							538,
+							1724,
+							657,
+							1543,
+							658
+						],
+						"confidence": 0.951,
+						"span": {
+							"offset": 42,
+							"length": 6
+						}
+					},
+					{
+						"content": "DE",
+						"polygon": [
+							549,
+							712,
+							639,
+							711,
+							639,
+							786,
+							550,
+							786
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 49,
+							"length": 2
+						}
+					},
+					{
+						"content": "PRIMEROS",
+						"polygon": [
+							663,
+							711,
+							976,
+							710,
+							976,
+							786,
+							663,
+							786
+						],
+						"confidence": 0.99,
+						"span": {
+							"offset": 52,
+							"length": 8
+						}
+					},
+					{
+						"content": "DE",
+						"polygon": [
+							1200,
+							714,
+							1292,
+							713,
+							1293,
+							787,
+							1200,
+							787
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 61,
+							"length": 2
+						}
+					},
+					{
+						"content": "SEGUNDOS",
+						"polygon": [
+							1313,
+							713,
+							1657,
+							713,
+							1657,
+							787,
+							1313,
+							787
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 64,
+							"length": 8
+						}
+					},
+					{
+						"content": "Butifarra",
+						"polygon": [
+							1142,
+							843,
+							1399,
+							845,
+							1399,
+							971,
+							1142,
+							971
+						],
+						"confidence": 0.961,
+						"span": {
+							"offset": 73,
+							"length": 9
+						}
+					},
+					{
+						"content": "con",
+						"polygon": [
+							1424,
+							845,
+							1499,
+							846,
+							1499,
+							971,
+							1424,
+							971
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 83,
+							"length": 3
+						}
+					},
+					{
+						"content": "Alubias",
+						"polygon": [
+							1524,
+							846,
+							1762,
+							846,
+							1762,
+							971,
+							1524,
+							971
+						],
+						"confidence": 0.98,
+						"span": {
+							"offset": 87,
+							"length": 7
+						}
+					},
+					{
+						"content": "Zarzuela",
+						"polygon": [
+							1142,
+							998,
+							1398,
+							998,
+							1398,
+							1114,
+							1141,
+							1116
+						],
+						"confidence": 0.927,
+						"span": {
+							"offset": 95,
+							"length": 8
+						}
+					},
+					{
+						"content": "de",
+						"polygon": [
+							1422,
+							998,
+							1476,
+							997,
+							1475,
+							1114,
+							1421,
+							1114
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 104,
+							"length": 2
+						}
+					},
+					{
+						"content": "Pescado",
+						"polygon": [
+							1499,
+							997,
+							1758,
+							997,
+							1758,
+							1116,
+							1499,
+							1115
+						],
+						"confidence": 0.989,
+						"span": {
+							"offset": 107,
+							"length": 7
+						}
+					},
+					{
+						"content": "Y",
+						"polygon": [
+							1871,
+							712,
+							1915,
+							712,
+							1916,
+							790,
+							1871,
+							790
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 115,
+							"length": 1
+						}
+					},
+					{
+						"content": "DE",
+						"polygon": [
+							1937,
+							712,
+							2015,
+							712,
+							2016,
+							790,
+							1938,
+							790
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 117,
+							"length": 2
+						}
+					},
+					{
+						"content": "POSTRE",
+						"polygon": [
+							2037,
+							712,
+							2244,
+							711,
+							2244,
+							790,
+							2038,
+							790
+						],
+						"confidence": 0.99,
+						"span": {
+							"offset": 120,
+							"length": 6
+						}
+					},
+					{
+						"content": "..",
+						"polygon": [
+							2259,
+							711,
+							2341,
+							711,
+							2341,
+							790,
+							2260,
+							790
+						],
+						"confidence": 0.319,
+						"span": {
+							"offset": 127,
+							"length": 2
+						}
+					},
+					{
+						"content": "Escudella",
+						"polygon": [
+							493,
+							843,
+							794,
+							846,
+							794,
+							956,
+							493,
+							955
+						],
+						"confidence": 0.963,
+						"span": {
+							"offset": 130,
+							"length": 9
+						}
+					},
+					{
+						"content": "Catalana",
+						"polygon": [
+							816,
+							846,
+							1079,
+							843,
+							1079,
+							959,
+							816,
+							956
+						],
+						"confidence": 0.983,
+						"span": {
+							"offset": 140,
+							"length": 8
+						}
+					},
+					{
+						"content": "Pimientos",
+						"polygon": [
+							490,
+							992,
+							776,
+							994,
+							776,
+							1126,
+							490,
+							1120
+						],
+						"confidence": 0.927,
+						"span": {
+							"offset": 149,
+							"length": 9
+						}
+					},
+					{
+						"content": "Rellenos",
+						"polygon": [
+							803,
+							995,
+							1072,
+							995,
+							1072,
+							1130,
+							802,
+							1127
+						],
+						"confidence": 0.978,
+						"span": {
+							"offset": 159,
+							"length": 8
+						}
+					},
+					{
+						"content": "Crema",
+						"polygon": [
+							1833,
+							844,
+							2032,
+							845,
+							2032,
+							957,
+							1834,
+							957
+						],
+						"confidence": 0.973,
+						"span": {
+							"offset": 168,
+							"length": 5
+						}
+					},
+					{
+						"content": "Catalana",
+						"polygon": [
+							2054,
+							845,
+							2351,
+							846,
+							2351,
+							957,
+							2054,
+							957
+						],
+						"confidence": 0.981,
+						"span": {
+							"offset": 174,
+							"length": 8
+						}
+					},
+					{
+						"content": "Fruta",
+						"polygon": [
+							1836,
+							995,
+							1982,
+							994,
+							1982,
+							1125,
+							1836,
+							1123
+						],
+						"confidence": 0.99,
+						"span": {
+							"offset": 183,
+							"length": 5
+						}
+					},
+					{
+						"content": "del",
+						"polygon": [
+							2008,
+							995,
+							2103,
+							997,
+							2102,
+							1126,
+							2008,
+							1125
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 189,
+							"length": 3
+						}
+					},
+					{
+						"content": "Tiempo",
+						"polygon": [
+							2128,
+							996,
+							2360,
+							996,
+							2360,
+							1133,
+							2128,
+							1127
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 193,
+							"length": 6
+						}
+					}
+				],
+				"lines": [
+					{
+						"content": "NUESTRO TRADICIONAL MENÚ DEL DÍA",
+						"polygon": [
+							583,
+							335,
+							2279,
+							347,
+							2277,
+							528,
+							582,
+							524
+						],
+						"spans": [
+							{
+								"offset": 0,
+								"length": 32
+							}
+						]
+					},
+					{
+						"content": "14€ (IVA Incl.)",
+						"polygon": [
+							1197,
+							528,
+							1724,
+							529,
+							1723,
+							658,
+							1197,
+							657
+						],
+						"spans": [
+							{
+								"offset": 33,
+								"length": 15
+							}
+						]
+					},
+					{
+						"content": "DE PRIMEROS",
+						"polygon": [
+							549,
+							711,
+							975,
+							709,
+							975,
+							785,
+							549,
+							786
+						],
+						"spans": [
+							{
+								"offset": 49,
+								"length": 11
+							}
+						]
+					},
+					{
+						"content": "DE SEGUNDOS",
+						"polygon": [
+							1200,
+							713,
+							1657,
+							713,
+							1657,
+							786,
+							1200,
+							787
+						],
+						"spans": [
+							{
+								"offset": 61,
+								"length": 11
+							}
+						]
+					},
+					{
+						"content": "Butifarra con Alubias",
+						"polygon": [
+							1142,
+							843,
+							1762,
+							844,
+							1762,
+							971,
+							1142,
+							971
+						],
+						"spans": [
+							{
+								"offset": 73,
+								"length": 21
+							}
+						]
+					},
+					{
+						"content": "Zarzuela de Pescado",
+						"polygon": [
+							1141,
+							996,
+							1757,
+							996,
+							1757,
+							1116,
+							1141,
+							1115
+						],
+						"spans": [
+							{
+								"offset": 95,
+								"length": 19
+							}
+						]
+					},
+					{
+						"content": "Y DE POSTRE ..",
+						"polygon": [
+							1871,
+							712,
+							2340,
+							711,
+							2340,
+							788,
+							1871,
+							790
+						],
+						"spans": [
+							{
+								"offset": 115,
+								"length": 14
+							}
+						]
+					},
+					{
+						"content": "Escudella Catalana",
+						"polygon": [
+							493,
+							843,
+							1078,
+							843,
+							1078,
+							959,
+							493,
+							959
+						],
+						"spans": [
+							{
+								"offset": 130,
+								"length": 18
+							}
+						]
+					},
+					{
+						"content": "Pimientos Rellenos",
+						"polygon": [
+							490,
+							990,
+							1072,
+							995,
+							1071,
+							1129,
+							490,
+							1124
+						],
+						"spans": [
+							{
+								"offset": 149,
+								"length": 18
+							}
+						]
+					},
+					{
+						"content": "Crema Catalana",
+						"polygon": [
+							1833,
+							843,
+							2351,
+							843,
+							2351,
+							956,
+							1833,
+							956
+						],
+						"spans": [
+							{
+								"offset": 168,
+								"length": 14
+							}
+						]
+					},
+					{
+						"content": "Fruta del Tiempo",
+						"polygon": [
+							1836,
+							994,
+							2360,
+							995,
+							2359,
+							1132,
+							1836,
+							1130
+						],
+						"spans": [
+							{
+								"offset": 183,
+								"length": 16
+							}
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 0,
+						"length": 199
+					}
+				]
+			}
+		],
+		"tables": [],
+		"paragraphs": [
+			{
+				"spans": [
+					{
+						"offset": 0,
+						"length": 48
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							583,
+							335,
+							2279,
+							347,
+							2276,
+							665,
+							581,
+							652
+						]
+					}
+				],
+				"role": "title",
+				"content": "NUESTRO TRADICIONAL MENÚ DEL DÍA 14€ (IVA Incl.)"
+			},
+			{
+				"spans": [
+					{
+						"offset": 49,
+						"length": 65
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							549,
+							707,
+							1763,
+							713,
+							1761,
+							1118,
+							547,
+							1112
+						]
+					}
+				],
+				"content": "DE PRIMEROS DE SEGUNDOS Butifarra con Alubias Zarzuela de Pescado"
+			},
+			{
+				"spans": [
+					{
+						"offset": 115,
+						"length": 14
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							1871,
+							712,
+							2340,
+							711,
+							2340,
+							788,
+							1871,
+							790
+						]
+					}
+				],
+				"content": "Y DE POSTRE .."
+			},
+			{
+				"spans": [
+					{
+						"offset": 130,
+						"length": 37
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							492,
+							837,
+							1079,
+							843,
+							1077,
+							1130,
+							489,
+							1124
+						]
+					}
+				],
+				"content": "Escudella Catalana Pimientos Rellenos"
+			},
+			{
+				"spans": [
+					{
+						"offset": 168,
+						"length": 31
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							1833,
+							843,
+							2360,
+							843,
+							2360,
+							1132,
+							1834,
+							1132
+						]
+					}
+				],
+				"content": "Crema Catalana Fruta del Tiempo"
+			}
+		],
+		"styles": [
+			{
+				"confidence": 0.6,
+				"spans": [
+					{
+						"offset": 0,
+						"length": 32
+					},
+					{
+						"offset": 149,
+						"length": 18
+					}
+				],
+				"isHandwritten": true
+			},
+			{
+				"confidence": 0.7,
+				"spans": [
+					{
+						"offset": 33,
+						"length": 15
+					}
+				],
+				"isHandwritten": true
+			},
+			{
+				"confidence": 0.3,
+				"spans": [
+					{
+						"offset": 49,
+						"length": 11
+					}
+				],
+				"isHandwritten": true
+			},
+			{
+				"confidence": 0.4,
+				"spans": [
+					{
+						"offset": 73,
+						"length": 21
+					}
+				],
+				"isHandwritten": true
+			},
+			{
+				"confidence": 0.8,
+				"spans": [
+					{
+						"offset": 183,
+						"length": 16
+					}
+				],
+				"isHandwritten": true
+			}
+		],
+		"documents": [
+			{
+				"docType": "ocr-4",
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							0,
+							0,
+							2816,
+							0,
+							2816,
+							1536,
+							0,
+							1536
+						]
+					}
+				],
+				"fields": {
+					"Precio": {
+						"type": "string",
+						"valueString": "14€",
+						"content": "14€",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									1197,
+									528,
+									1354,
+									529,
+									1353,
+									659,
+									1196,
+									658
+								]
+							}
+						],
+						"confidence": 0.677,
+						"spans": [
+							{
+								"offset": 33,
+								"length": 3
+							}
+						]
+					},
+					"Tipos de platos": {
+						"type": "string",
+						"valueString": "DE PRIMEROS DE SEGUNDOS\nY DE POSTRE",
+						"content": "DE PRIMEROS DE SEGUNDOS\nY DE POSTRE",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									549,
+									711,
+									2244,
+									708,
+									2244,
+									790,
+									549,
+									793
+								]
+							}
+						],
+						"confidence": 0.638,
+						"spans": [
+							{
+								"offset": 49,
+								"length": 23
+							},
+							{
+								"offset": 115,
+								"length": 11
+							}
+						]
+					},
+					"Nombre de plato": {
+						"type": "string",
+						"valueString": "Butifarra con Alubias Zarzuela de Pescado\nEscudella Catalana Pimientos Rellenos\nCrema Catalana Fruta del Tiempo",
+						"content": "Butifarra con Alubias Zarzuela de Pescado\nEscudella Catalana Pimientos Rellenos\nCrema Catalana Fruta del Tiempo",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									491,
+									839,
+									2361,
+									846,
+									2360,
+									1134,
+									490,
+									1128
+								]
+							}
+						],
+						"confidence": 0.275,
+						"spans": [
+							{
+								"offset": 73,
+								"length": 41
+							},
+							{
+								"offset": 130,
+								"length": 69
+							}
+						]
+					},
+					"Titulo": {
+						"type": "string",
+						"valueString": "NUESTRO TRADICIONAL MENÚ DEL DÍA",
+						"content": "NUESTRO TRADICIONAL MENÚ DEL DÍA",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									583,
+									336,
+									2280,
+									343,
+									2279,
+									534,
+									582,
+									527
+								]
+							}
+						],
+						"confidence": 0.386,
+						"spans": [
+							{
+								"offset": 0,
+								"length": 32
+							}
+						]
+					},
+					"Descripcion de plato": {
+						"type": "string",
+						"confidence": 0.994
+					},
+					"Nombre restaurante": {
+						"type": "string",
+						"confidence": 0.993
+					},
+					"Direccion": {
+						"type": "string",
+						"confidence": 0.988
+					},
+					"Numero de telefono": {
+						"type": "string",
+						"confidence": 0.988
+					},
+					"Titulo oferta": {
+						"type": "string",
+						"confidence": 0.989
+					},
+					"Complementos": {
+						"type": "string",
+						"confidence": 0.989
+					},
+					"Fecha oferta": {
+						"type": "string",
+						"confidence": 0.993
+					},
+					"Suplemento": {
+						"type": "string",
+						"confidence": 0.993
+					},
+					"Precio suplemento": {
+						"type": "string",
+						"confidence": 0.993
+					}
+				},
+				"confidence": 0.999,
+				"spans": [
+					{
+						"offset": 0,
+						"length": 199
+					}
+				]
+			}
+		],
+		"contentFormat": "text",
+		"sections": [
+			{
+				"spans": [
+					{
+						"offset": 0,
+						"length": 199
+					}
+				],
+				"elements": [
+					"/paragraphs/0",
+					"/paragraphs/1",
+					"/paragraphs/2",
+					"/paragraphs/3",
+					"/paragraphs/4"
+				]
+			}
+		],
+		"figures": [
+			{
+				"id": "1.1",
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							480,
+							302,
+							2416,
+							302,
+							2416,
+							1269,
+							479,
+							1269
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 0,
+						"length": 199
+					}
+				],
+				"elements": [
+					"/paragraphs/0",
+					"/paragraphs/1",
+					"/paragraphs/2",
+					"/paragraphs/3",
+					"/paragraphs/4"
+				]
+			}
+		]
+	}
+}
