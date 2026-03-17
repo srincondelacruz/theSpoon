@@ -25,6 +25,11 @@ const Login = () => {
         const { error: signUpError } = await supabase.auth.signUp({
           email,
           password,
+          options: {
+            data: {
+              role: 'restaurant'
+            }
+          }
         });
         error = signUpError;
         if (!error) setMessage("Revisa tu correo para verificar la cuenta (o inicia sesión si el correo no requiere verificación).");

@@ -2,8 +2,6 @@ venv/
 .venv/
 __pycache__/
 .env
-data/*.csv
-models/*.pkl
 .DS_Store
 DOCUMENTACION_ML_DETALLADA.md
 imports/

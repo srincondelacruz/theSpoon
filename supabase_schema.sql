@@ -122,9 +122,7 @@ ON public.daily_analytics FOR SELECT USING (auth.uid() = restaurant_id);
 CREATE OR REPLACE FUNCTION public.handle_new_user() 
 RETURNS TRIGGER AS $$
 BEGIN
-  -- We assume new signups from the restaurant portal have a specific metadata flag
-  -- For generic signups, you might want a customers insert instead, but we'll default to restaurant here for simplicity
-  -- based on the current app structure. In a real app, role-based logic or separate metadata is needed.
+  -- Por defecto tratamos a todos como clientes a menos que se especifique el rol de restaurante
   IF new.raw_user_meta_data->>'role' = 'restaurant' THEN
     INSERT INTO public.restaurants (id, name, location)
     VALUES (new.id, new.email, 'Sin Ubicación');

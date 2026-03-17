@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
 import { motion, AnimatePresence } from 'framer-motion';
 import { UploadCloud, FileText, CheckCircle, TrendingUp, Users, CloudRain, ShieldCheck } from 'lucide-react';
@@ -8,6 +8,8 @@ const Dashboard = ({ session }) => {
   const [imagePreview, setImagePreview] = useState(null);
   const [extracting, setExtracting] = useState(false);
   const [extractedMenu, setExtractedMenu] = useState(null);
+  const [publishedMenus, setPublishedMenus] = useState([]);
+  const [loadingHistory, setLoadingHistory] = useState(true);
 
   // ML predictions populated dynamically
   const [predictions, setPredictions] = useState({
@@ -20,25 +22,50 @@ const Dashboard = ({ session }) => {
   const handleFileUpload = (e) => {
     const selectedFile = e.target.files[0];
     if (!selectedFile) return;
-    
+
     setFile(selectedFile);
     setImagePreview(URL.createObjectURL(selectedFile));
+  };
+
+  useEffect(() => {
+    fetchMyMenus();
+  }, [session]);
+
+  const fetchMyMenus = async () => {
+    try {
+      setLoadingHistory(true);
+      const { data, error } = await supabase
+        .from('menus')
+        .select('*')
+        .eq('restaurant_id', session.user.id)
+        .order('created_at', { ascending: false });
+
+      if (error) throw error;
+      setPublishedMenus(data || []);
+    } catch (err) {
+      console.error("Error al cargar historial:", err.message);
+    } finally {
+      setLoadingHistory(false);
+    }
   };
 
   const processImage = async () => {
     setExtracting(true);
     const formData = new FormData();
     formData.append("file", file);
-    
+
     try {
       const response = await fetch("/api/predict_menu_full", {
         method: "POST",
         body: formData,
       });
-      
-      if (!response.ok) throw new Error("Error en el servidor");
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || "Error en el servidor");
+      }
       const data = await response.json();
-      
+
       // Cargamos el menú estructurado que viene del backend
       setExtractedMenu(data.menu);
 
@@ -47,7 +74,7 @@ const Dashboard = ({ session }) => {
           portions: data.prediccion.raciones,
           influx: data.prediccion.raciones > 35 ? '+12% (Alta)' : '-8% (Baja)',
           weather: `${data.prediccion.temperatura}°C - ${data.prediccion.dia_semana}`,
-          recommendation: `Cocina ${data.prediccion.tipo_cocina} (Confianza: ${Math.round(data.prediccion.confianza*100)}%)`
+          recommendation: `Cocina ${data.prediccion.tipo_cocina} (Confianza: ${Math.round(data.prediccion.confianza * 100)}%)`
         });
       }
     } catch (error) {
@@ -61,6 +88,33 @@ const Dashboard = ({ session }) => {
     const newPlatos = [...extractedMenu.platos];
     newPlatos[index][field] = value;
     setExtractedMenu({ ...extractedMenu, platos: newPlatos });
+  };
+
+  const recalculatePredictions = async () => {
+    if (!extractedMenu) return;
+    setExtracting(true);
+    try {
+      const formData = new FormData();
+      formData.append("plato", extractedMenu.platos[0].nombre);
+      formData.append("precio", extractedMenu.precio_general);
+
+      const response = await fetch("http://localhost:8000/api/recalculate_prediction", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+      setPredictions({
+        ...predictions,
+        portions: data.raciones,
+        influx: `Calculada (${data.influx_label})`,
+        recommendation: `Actualizado: Cocina ${data.tipo_cocina} detectada.`
+      });
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setExtracting(false);
+    }
   };
 
   const saveMenu = async () => {
@@ -80,6 +134,7 @@ const Dashboard = ({ session }) => {
 
       if (error) throw error;
       alert("¡Menú publicado con éxito en la página de clientes!");
+      fetchMyMenus(); // Recargamos el historial tras publicar
     } catch (error) {
       alert(`Error al publicar: ${error.message}`);
     } finally {
@@ -123,20 +178,20 @@ const Dashboard = ({ session }) => {
                 {/* Restaurante */}
                 <div style={{ padding: '1rem', border: '1px solid #7dd3fc', borderRadius: '8px', background: '#f0f9ff' }}>
                   <h4 style={{ color: '#0369a1', marginBottom: '1rem' }}>📍 Datos del Restaurante</h4>
-                  <div className="form-group"><label>Nombre</label><input className="input" value={extractedMenu.restaurante.nombre} onChange={e => setExtractedMenu({...extractedMenu, restaurante: {...extractedMenu.restaurante, nombre: e.target.value}})} /></div>
-                  <div className="form-group"><label>Dirección</label><input className="input" value={extractedMenu.restaurante.direccion} onChange={e => setExtractedMenu({...extractedMenu, restaurante: {...extractedMenu.restaurante, direccion: e.target.value}})} /></div>
-                  <div className="form-group"><label>Teléfono</label><input className="input" value={extractedMenu.restaurante.telefono} onChange={e => setExtractedMenu({...extractedMenu, restaurante: {...extractedMenu.restaurante, telefono: e.target.value}})} /></div>
+                  <div className="form-group"><label>Nombre</label><input className="input" value={extractedMenu.restaurante.nombre} onChange={e => setExtractedMenu({ ...extractedMenu, restaurante: { ...extractedMenu.restaurante, nombre: e.target.value } })} /></div>
+                  <div className="form-group"><label>Dirección</label><input className="input" value={extractedMenu.restaurante.direccion} onChange={e => setExtractedMenu({ ...extractedMenu, restaurante: { ...extractedMenu.restaurante, direccion: e.target.value } })} /></div>
+                  <div className="form-group"><label>Teléfono</label><input className="input" value={extractedMenu.restaurante.telefono} onChange={e => setExtractedMenu({ ...extractedMenu, restaurante: { ...extractedMenu.restaurante, telefono: e.target.value } })} /></div>
                 </div>
 
                 {/* Oferta */}
                 <div style={{ padding: '1rem', border: '1px solid #c084fc', borderRadius: '8px', background: '#faf5ff' }}>
                   <h4 style={{ color: '#7e22ce', marginBottom: '1rem' }}>🏷️ Información de Oferta</h4>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                    <div className="form-group"><label>Título</label><input className="input" value={extractedMenu.ofertas.titulo} onChange={e => setExtractedMenu({...extractedMenu, ofertas: {...extractedMenu.ofertas, titulo: e.target.value}})} /></div>
-                    <div className="form-group"><label>Título Oferta</label><input className="input" value={extractedMenu.ofertas.titulo_oferta} onChange={e => setExtractedMenu({...extractedMenu, ofertas: {...extractedMenu.ofertas, titulo_oferta: e.target.value}})} /></div>
+                    <div className="form-group"><label>Título</label><input className="input" value={extractedMenu.ofertas.titulo} onChange={e => setExtractedMenu({ ...extractedMenu, ofertas: { ...extractedMenu.ofertas, titulo: e.target.value } })} /></div>
+                    <div className="form-group"><label>Título Oferta</label><input className="input" value={extractedMenu.ofertas.titulo_oferta} onChange={e => setExtractedMenu({ ...extractedMenu, ofertas: { ...extractedMenu.ofertas, titulo_oferta: e.target.value } })} /></div>
                   </div>
-                  <div className="form-group"><label>Fecha Oferta</label><input className="input" value={extractedMenu.ofertas.fecha_oferta} onChange={e => setExtractedMenu({...extractedMenu, ofertas: {...extractedMenu.ofertas, fecha_oferta: e.target.value}})} /></div>
-                  <div className="form-group"><label>Complementos</label><input className="input" value={extractedMenu.ofertas.complementos} onChange={e => setExtractedMenu({...extractedMenu, ofertas: {...extractedMenu.ofertas, complementos: e.target.value}})} /></div>
+                  <div className="form-group"><label>Fecha Oferta</label><input className="input" value={extractedMenu.ofertas.fecha_oferta} onChange={e => setExtractedMenu({ ...extractedMenu, ofertas: { ...extractedMenu.ofertas, fecha_oferta: e.target.value } })} /></div>
+                  <div className="form-group"><label>Complementos</label><input className="input" value={extractedMenu.ofertas.complementos} onChange={e => setExtractedMenu({ ...extractedMenu, ofertas: { ...extractedMenu.ofertas, complementos: e.target.value } })} /></div>
                 </div>
 
                 {/* Platos */}
@@ -162,13 +217,14 @@ const Dashboard = ({ session }) => {
                 <div className="card" style={{ background: 'var(--color-primary)', color: 'white' }}>
                   <div className="form-group" style={{ margin: 0 }}>
                     <label style={{ color: 'rgba(255,255,255,0.8)' }}>Precio del Menú Completo (€)</label>
-                    <input className="input" style={{ background: 'white', color: 'black' }} type="number" value={extractedMenu.precio_general} onChange={e => setExtractedMenu({...extractedMenu, precio_general: e.target.value})} />
+                    <input className="input" style={{ background: 'white', color: 'black' }} type="number" value={extractedMenu.precio_general} onChange={e => setExtractedMenu({ ...extractedMenu, precio_general: e.target.value })} />
                   </div>
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                   <button className="btn btn-outline" onClick={() => alert("Cambios guardados localmente")}>💾 Guardar Borrador</button>
-                  <button className="btn btn-primary" onClick={saveMenu}>🚀 Publicar Menú</button>
+                  <button className="btn btn-outline" onClick={recalculatePredictions}>🔄 Recalcular Predicción</button>
+                  <button className="btn btn-primary" onClick={saveMenu} style={{ gridColumn: 'span 2' }}>🚀 Publicar Menú</button>
                 </div>
               </div>
             )}
@@ -180,6 +236,39 @@ const Dashboard = ({ session }) => {
           <div className="card"><p style={{ margin: 0, opacity: 0.6 }}>Raciones Recomendadas</p><h3>{predictions.portions} <small style={{ fontWeight: 400 }}>raciones</small></h3></div>
           <div className="card" style={{ borderLeft: '4px solid var(--color-primary)' }}><strong>{predictions.weather}:</strong><p>{predictions.recommendation}</p></div>
         </div>
+      </div>
+
+      {/* Sección de Historial */}
+      <div className="card" style={{ marginTop: '2rem' }}>
+        <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          📋 Mis Menús Publicados
+        </h2>
+
+        {loadingHistory ? (
+          <p style={{ color: 'var(--color-text-muted)' }}>Cargando historial...</p>
+        ) : publishedMenus.length === 0 ? (
+          <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--color-text-muted)' }}>
+            <p>Aún no has publicado ningún menú.</p>
+            <p style={{ fontSize: '0.85rem' }}>Los menús que publiques aparecerán aquí y en la página principal.</p>
+          </div>
+        ) : (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
+            {publishedMenus.map((menu) => (
+              <div key={menu.id} style={{ padding: '1rem', border: '1px solid var(--color-border)', borderRadius: 'var(--border-radius)', background: 'var(--color-bg)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                  <span style={{ fontWeight: 600, color: 'var(--color-primary)' }}>{menu.price}€</span>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>{new Date(menu.date).toLocaleDateString()}</span>
+                </div>
+                <div style={{ fontSize: '0.9rem' }}>
+                  <p style={{ margin: '0 0 5px 0' }}><strong>{menu.items.ofertas?.titulo_oferta || "Menú del día"}</strong></p>
+                  <p style={{ margin: 0, color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+                    {menu.items.platos?.length || 0} platos extraídos
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </motion.div>
   );

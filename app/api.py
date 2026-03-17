@@ -6,11 +6,13 @@ import os
 import traceback
 from datetime import datetime
 from typing import Optional
+from datetime import datetime
 
 # Ensure the scripts directory is in the path to import interprete_menu
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from scripts.interprete_menu import ejecutar_prediccion_completa, MODELO_NLP
 from app.services.ocr_service import extract_menu_from_image
+from app.services.weather_service import get_current_weather, get_context_date_info
+import scripts.interprete_menu as interprete_menu
 from transformers import pipeline as hf_pipeline
 
 app = FastAPI(title="La Cuchara API - OCR & ML")
@@ -25,7 +27,7 @@ app.add_middleware(
 )
 
 print("Starting to load the ML models. This might take a bit on first run...")
-clasificador = hf_pipeline("zero-shot-classification", model=MODELO_NLP)
+clasificador = hf_pipeline("zero-shot-classification", model=interprete_menu.MODELO_NLP)
 print("Models loaded successfully.")
 
 def obtener_mejor_plato_para_clase(texto_ocr: str) -> str:
@@ -98,7 +100,7 @@ def predict_menu(request: PlatosRequest):
         primer_plato = request.platos_texto
         
     try:
-        resultado = ejecutar_prediccion_completa(
+        resultado = interprete_menu.ejecutar_prediccion_completa(
             plato=primer_plato,
             dia_semana=request.dia_semana,
             lluvia=request.lluvia,
@@ -168,3 +170,30 @@ async def predict_menu_full(file: UploadFile = File(...)):
     except Exception as e:
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/recalculate_prediction")
+async def recalculate(
+    plato: str = Form(...),
+    precio: float = Form(12.5)
+):
+    """Permite recalcular el ML si el usuario edita el nombre del plato del OCR."""
+    clima = get_current_weather()
+    dia_semana, temporada = get_context_date_info()
+    
+    resultado_ml = interprete_menu.ejecutar_prediccion_completa(
+        plato=plato,
+        dia_semana=dia_semana,
+        lluvia=clima["raining"],
+        temperatura=clima["temp"],
+        precio_menu=precio,
+        temporada=temporada,
+        clasificador=clasificador
+    )
+    
+    nivel_afluencia = "Alta" if resultado_ml["raciones"] > 40 else "Media" if resultado_ml["raciones"] > 25 else "Baja"
+    
+    return {
+        **resultado_ml,
+        "influx_label": nivel_afluencia,
+        "weather_desc": "Lluvia" if clima["raining"] else "Despejado"
+    }
