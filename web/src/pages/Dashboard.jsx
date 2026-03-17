@@ -29,11 +29,6 @@ const Dashboard = ({ session }) => {
     setExtracting(true);
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("dia_semana", "Martes");
-    formData.append("lluvia", true);
-    formData.append("temperatura", 8.5);
-    formData.append("precio_menu", 12.5);
-    formData.append("temporada", "invierno");
     
     try {
       const response = await fetch("/api/predict_menu_full", {
@@ -47,12 +42,14 @@ const Dashboard = ({ session }) => {
       // Cargamos el menú estructurado que viene del backend
       setExtractedMenu(data.menu);
 
-      setPredictions({
-        portions: data.prediccion.raciones,
-        influx: data.prediccion.raciones > 35 ? '+12% (Alta)' : '-8% (Baja)',
-        weather: `Lluvia (${data.prediccion.temperatura}°C) - ${data.prediccion.dia_semana}`,
-        recommendation: `Análisis Real: Detectada cocina ${data.prediccion.tipo_cocina} (Confianza: ${Math.round(data.prediccion.confianza*100)}%)`
-      });
+      if (data.prediccion && data.prediccion.raciones) {
+        setPredictions({
+          portions: data.prediccion.raciones,
+          influx: data.prediccion.raciones > 35 ? '+12% (Alta)' : '-8% (Baja)',
+          weather: `${data.prediccion.temperatura}°C - ${data.prediccion.dia_semana}`,
+          recommendation: `Cocina ${data.prediccion.tipo_cocina} (Confianza: ${Math.round(data.prediccion.confianza*100)}%)`
+        });
+      }
     } catch (error) {
       alert(`Error: ${error.message}`);
     } finally {

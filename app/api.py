@@ -4,12 +4,13 @@ from pydantic import BaseModel
 import sys
 import os
 import traceback
+from datetime import datetime
 from typing import Optional
 
 # Ensure the scripts directory is in the path to import interprete_menu
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scripts.interprete_menu import ejecutar_prediccion_completa, MODELO_NLP
-from app.services.ocr_service import extract_text_from_image
+from app.services.ocr_service import extract_menu_from_image
 from transformers import pipeline as hf_pipeline
 
 app = FastAPI(title="La Cuchara API - OCR & ML")
@@ -110,71 +111,58 @@ def predict_menu(request: PlatosRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+DIAS_SEMANA = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+
+def _get_temporada():
+    month = datetime.now().month
+    if month in [12, 1, 2]: return "invierno"
+    if month in [3, 4, 5]: return "primavera"
+    if month in [6, 7, 8]: return "verano"
+    return "otoño"
+
 @app.post("/api/predict_menu_full")
-async def predict_menu_full(
-    file: UploadFile = File(...),
-    dia_semana: str = Form("Lunes"),
-    lluvia: bool = Form(False),
-    temperatura: float = Form(20.0),
-    precio_menu: float = Form(12.5),
-    temporada: Optional[str] = Form("primavera")
-):
+async def predict_menu_full(file: UploadFile = File(...)):
     """
-    Endpoint principal unificado: 
-    OCR Azure -> Parsing Estructurado -> Predicción ML
+    Endpoint principal unificado:
+    OCR Azure (modelo custom) -> Datos estructurados reales -> Predicción ML
     """
     if not file:
         raise HTTPException(status_code=400, detail="No file uploaded")
-        
+
     try:
-        # 1. OCR (Azure API)
         content = await file.read()
-        ocr_text, precio_detectado = extract_text_from_image(content)
-        
-        if not ocr_text:
+        menu_data = extract_menu_from_image(content)
+
+        if not menu_data["raw_text"]:
             raise HTTPException(status_code=400, detail="El OCR no detectó ningún texto en la imagen.")
-            
-        precio_final = precio_detectado if precio_detectado is not None else precio_menu
-        
-        # 2. Parsing Estructurado del texto
-        lineas = [l.strip() for l in ocr_text.split('\n') if l.strip()]
-        nombre_restaurante = lineas[0] if lineas else "Restaurante Desconocido"
-        plato_para_ia = obtener_mejor_plato_para_clase(ocr_text)
-        
-        menu_estructurado = {
-            "restaurante": {
-                "nombre": nombre_restaurante,
-                "direccion": "Consultar en mapa...", 
-                "telefono": "Añadir teléfono..."
-            },
-            "ofertas": {
-                "titulo": "Menú del día",
-                "titulo_oferta": "Oferta Especial",
-                "fecha_oferta": dia_semana,
-                "complementos": "Pan, bebida y café incluidos"
-            },
-            "platos": [
-                {"tipo": "1º Plato", "nombre": plato_para_ia, "descripcion": "Extraído por OCR", "suplemento": False, "precio_suplemento": 0},
-                {"tipo": "2º Plato", "nombre": "Siguiente plato detectado...", "descripcion": "", "suplemento": False, "precio_suplemento": 0}
-            ],
-            "precio_general": precio_final
-        }
-            
-        # 3. Predicción de demanda (ML)
-        resultado_ml = ejecutar_prediccion_completa(
-            plato=plato_para_ia,
-            dia_semana=dia_semana,
-            lluvia=lluvia,
-            temperatura=temperatura,
-            precio_menu=precio_final,
-            temporada=temporada,
-            clasificador=clasificador
-        )
-        
+
+        # Parámetros ML auto-calculados
+        dia_semana = DIAS_SEMANA[datetime.now().weekday()]
+        temporada = _get_temporada()
+        precio_final = menu_data["precio_general"] or 12.0
+        plato_para_ia = menu_data["platos"][0]["nombre"] if menu_data["platos"] else ""
+
+        resultado_ml = {}
+        if plato_para_ia:
+            resultado_ml = ejecutar_prediccion_completa(
+                plato=plato_para_ia,
+                dia_semana=dia_semana,
+                lluvia=False,
+                temperatura=20.0,
+                precio_menu=precio_final,
+                temporada=temporada,
+                clasificador=clasificador
+            )
+
         return {
-            "menu": menu_estructurado,
+            "menu": {
+                "restaurante": menu_data["restaurante"],
+                "ofertas": menu_data["ofertas"],
+                "platos": menu_data["platos"],
+                "precio_general": menu_data["precio_general"],
+            },
             "prediccion": resultado_ml,
-            "raw_ocr_text": ocr_text
+            "raw_ocr_text": menu_data["raw_text"],
         }
 
     except Exception as e:
