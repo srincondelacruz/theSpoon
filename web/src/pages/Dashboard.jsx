@@ -66,6 +66,30 @@ const Dashboard = ({ session }) => {
     setExtractedMenu({ ...extractedMenu, platos: newPlatos });
   };
 
+  const saveMenu = async () => {
+    try {
+      setExtracting(true);
+      const { error } = await supabase
+        .from('menus')
+        .insert([
+          {
+            restaurant_id: session.user.id,
+            items: extractedMenu, // Guardamos el objeto completo (JSONB)
+            price: parseFloat(extractedMenu.precio_general),
+            date: new Date().toISOString().split('T')[0],
+            tags: [extractedMenu.ofertas.titulo_oferta.toLowerCase()]
+          }
+        ]);
+
+      if (error) throw error;
+      alert("¡Menú publicado con éxito en la página de clientes!");
+    } catch (error) {
+      alert(`Error al publicar: ${error.message}`);
+    } finally {
+      setExtracting(false);
+    }
+  };
+
   const addPlato = () => {
     setExtractedMenu({
       ...extractedMenu,
@@ -145,7 +169,10 @@ const Dashboard = ({ session }) => {
                   </div>
                 </div>
 
-                <button className="btn btn-primary" onClick={() => alert("Guardado!")} style={{ width: '100%' }}>💾 Guardar Cambios</button>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                  <button className="btn btn-outline" onClick={() => alert("Cambios guardados localmente")}>💾 Guardar Borrador</button>
+                  <button className="btn btn-primary" onClick={saveMenu}>🚀 Publicar Menú</button>
+                </div>
               </div>
             )}
           </div>

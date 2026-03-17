@@ -109,15 +109,14 @@ def predict_menu(request: PlatosRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
 @app.post("/api/predict_menu_full")
 async def predict_menu_full(
     file: UploadFile = File(...),
-    dia_semana: str = Form(...),
-    lluvia: bool = Form(...),
-    temperatura: float = Form(...),
-    precio_menu: float = Form(...),
-    temporada: Optional[str] = Form(None)
+    dia_semana: str = Form("Lunes"),
+    lluvia: bool = Form(False),
+    temperatura: float = Form(20.0),
+    precio_menu: float = Form(12.5),
+    temporada: Optional[str] = Form("primavera")
 ):
     """
     Endpoint principal unificado: 
@@ -136,23 +135,16 @@ async def predict_menu_full(
             
         precio_final = precio_detectado if precio_detectado is not None else precio_menu
         
-        # 2. Parsing Estructurado del texto (Heurística simple)
-        # Separamos los platos de los datos de contacto/restaurante
+        # 2. Parsing Estructurado del texto
         lineas = [l.strip() for l in ocr_text.split('\n') if l.strip()]
-        
-        # Intentamos adivinar el nombre del restaurante (suele ser la primera línea)
         nombre_restaurante = lineas[0] if lineas else "Restaurante Desconocido"
-        
-        # Clasificamos platos para la IA (mejor plato para predicción)
         plato_para_ia = obtener_mejor_plato_para_clase(ocr_text)
         
-        # 3. Respuesta estructurada para el Frontend
-        # Mapeamos los campos solicitados por el usuario
         menu_estructurado = {
             "restaurante": {
                 "nombre": nombre_restaurante,
-                "direccion": "Consultar en mapa...", # Campo para editar
-                "telefono": "Añadir teléfono..."      # Campo para editar
+                "direccion": "Consultar en mapa...", 
+                "telefono": "Añadir teléfono..."
             },
             "ofertas": {
                 "titulo": "Menú del día",
@@ -167,7 +159,7 @@ async def predict_menu_full(
             "precio_general": precio_final
         }
             
-        # 4. Predicción de demanda (ML)
+        # 3. Predicción de demanda (ML)
         resultado_ml = ejecutar_prediccion_completa(
             plato=plato_para_ia,
             dia_semana=dia_semana,
@@ -178,7 +170,6 @@ async def predict_menu_full(
             clasificador=clasificador
         )
         
-        # Combinamos todo
         return {
             "menu": menu_estructurado,
             "prediccion": resultado_ml,
@@ -187,5 +178,3 @@ async def predict_menu_full(
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-
